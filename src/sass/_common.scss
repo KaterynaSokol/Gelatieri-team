@@ -1,1 +1,79 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
+
+// Зверніть увагу!!!
+// font-family: 'Montserrat', sans-serif;
+// font-family: 'Seymour One', sans-serif;
+
+// Base styles!
+
+:root {
+  --main-green: #84a178;
+  --main-yellow: #f8d24e;
+  --light-yellow: #efd478;
+  --light-green: #aec6a5;
+  --chocolate: #d6936d;
+  --light-chocolate: #d5753f;
+  --gradient: #d9d9d9;
+  --text-light: #fcfcfc;
+  --text-dark: #131313;
+  --text-footer: #7a7a7a;
+}
+body {
+  color: var(--text-light);
+  font-family: Montserrat, sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.list {
+  list-style: none;
+}
+.link {
+  text-decoration: none;
+}
+
+.section {
+  padding: 120px 0 120px 0;
+}
+
+.container {
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (max-width: 767px) {
+    width: 100%;
+    max-width: 480px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
