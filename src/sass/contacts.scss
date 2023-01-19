@@ -1,0 +1,13 @@
+.contacts-container {
+  background-image: linear-gradient(
+    to right,
+    var(--main-green),
+    var(--main-green)
+  );
+}
+
+.visit-list {
+  width: 280px;
+  background-color: var(--text-light);
+  display: flex;
+}
