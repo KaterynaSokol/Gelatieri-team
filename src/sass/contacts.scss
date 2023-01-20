@@ -1,3 +1,12 @@
+.contacts-section {
+  padding-bottom: 60px;
+  background-image: linear-gradient(
+    to bottom,
+    var(--main-green),
+    var(--main-green)
+  );
+}
+
 .visit-item-titel {
   font-weight: 500;
   font-size: 12px;
@@ -35,14 +44,6 @@
   line-height: 1.86;
 }
 
-.contacts-container {
-  background-image: linear-gradient(
-    to right,
-    var(--main-green),
-    var(--main-green)
-  );
-}
-
 .visit-list {
   display: flex;
   flex-direction: column;
@@ -55,18 +56,46 @@
   background-color: var(--text-light);
   border-radius: 24px;
   padding: 40px 32px 24px 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .visit-item-titel {
   background-color: var(--main-yellow);
   padding: 4px 22px;
   display: inline-block;
+  border-radius: 4px;
 }
 
 .address-container {
   margin-top: 20px;
   margin-bottom: 24px;
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.address-container::after {
+  content: '';
+  position: relative;
+  display: block;
+  width: 100%;
+  background-color: var(--grey-line);
+  border-radius: 2px;
+  height: 1px;
+  top: 24px;
+}
+
+.working-period::after {
+  content: '';
+  position: relative;
+  display: block;
+  width: 100%;
+  background-color: var(--grey-line);
+  border-radius: 2px;
+  height: 1px;
+  top: 24px;
 }
 
 .address-city {
@@ -76,6 +105,7 @@
 .working-period {
   margin-top: 24px;
   margin-bottom: 24px;
+  width: 100%;
 }
 
 .working-period-weekend {
@@ -98,7 +128,7 @@
   margin-top: 6px;
 }
 
-.contacts-button button {
+.button-our-location {
   width: 196px;
   height: 42px;
   background-color: var(--main-yellow);
@@ -110,12 +140,32 @@
   color: var(--text-dark);
 }
 
-.contacts-button button:hover {
+.button-franchise {
+  width: 196px;
+  height: 42px;
+  background-color: transparent;
+  border-radius: 10px;
+  border: solid var(--main-yellow) 2px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.28;
+  color: var(--text-dark);
+}
+
+.button-franchise:hover {
+  border: solid var(--button-green) 2px;
+}
+
+.button-our-location:hover {
   background-color: #0a8817;
 }
 
-.contacts-button button:focus {
+.button-our-location:focus {
   color: #fff;
+}
+
+.button-franchise:focus {
+  color: var(--white);
 }
 
 .contacts-buttons-list {
