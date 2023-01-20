@@ -1,0 +1,129 @@
+.visit-item-titel {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.2;
+  letter-spacing: 0.04em;
+  color: var(--text-dark);
+  text-transform: uppercase;
+}
+
+.address-city {
+  color: var(--text-dark);
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.86;
+}
+
+.address-street {
+  color: var(--chocolate);
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.83;
+}
+
+.working-period-day {
+  color: var(--text-dark);
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.86;
+}
+
+.working-period-hours {
+  color: #ababab;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.86;
+}
+
+.contacts-container {
+  background-image: linear-gradient(
+    to right,
+    var(--main-green),
+    var(--main-green)
+  );
+}
+
+.visit-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.visit-item {
+  width: 280px;
+  background-color: var(--text-light);
+  border-radius: 24px;
+  padding: 40px 32px 24px 32px;
+}
+
+.visit-item-titel {
+  background-color: var(--main-yellow);
+  padding: 4px 22px;
+  display: inline-block;
+}
+
+.address-container {
+  margin-top: 20px;
+  margin-bottom: 24px;
+  display: inline-block;
+}
+
+.address-city {
+  margin-bottom: 8px;
+}
+
+.working-period {
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.working-period-weekend {
+  margin-top: 8px;
+}
+
+.contacts-list {
+  margin-top: 24px;
+  display: inline-block;
+}
+
+.contacts-list-item a {
+  color: var(--text-dark);
+  line-height: 1.6;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.contacts-list-item:nth-child(2) {
+  margin-top: 6px;
+}
+
+.contacts-button button {
+  width: 196px;
+  height: 42px;
+  background-color: var(--main-yellow);
+  border-radius: 10px;
+  border: none;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.28;
+  color: var(--text-dark);
+}
+
+.contacts-button button:hover {
+  background-color: #0a8817;
+}
+
+.contacts-button button:focus {
+  color: #fff;
+}
+
+.contacts-buttons-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 20px;
+  align-items: center;
+}
+
+// ==========================To check grey and white color for availability ==========================

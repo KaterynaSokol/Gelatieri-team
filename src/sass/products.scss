@@ -1,0 +1,307 @@
+.products {
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+text-align: center;
+background: var(--brand-color) ;
+margin-left: auto;
+margin-right: auto;
+background: linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7)), #D9D9D9;
+background-image : 
+url("../images/desktop/background.jpg");
+      
+}
+     
+.label-product {
+font-family: 'Montserrat', sans-serif;
+font-style: normal;
+font-weight: 800;
+font-size: 30px;
+line-height: 37px;
+text-align: center;
+letter-spacing: 0.04em;
+text-transform: uppercase;
+color: #131313;
+margin-bottom: 12px;
+}
+      
+.top-product {
+text-align: center;
+padding-top: 60px;
+margin-bottom: 120px;
+color: #131313;
+}
+      
+      
+.h2 {
+font-family: 'Seymour One', sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 36px;
+line-height: 45px;
+text-align: center;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+         
+}
+          
+.h3 {
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 37px;
+text-align: center;
+letter-spacing: 0.04em;
+text-transform: uppercase;
+color: #131313;
+margin-top: 108px;
+}
+          
+      
+.p {
+font-family: 'Montserrat';
+font-weight: 400;
+font-size: 16px;
+line-height: 176%;
+text-align: center;
+letter-spacing: 0.04em;
+color: #131313;
+          
+}
+
+.cream {
+width: 370px;
+height: 536px;
+left: 0px;
+top: 183px;
+background: #AEC6A5;
+box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+border-radius: 24px;
+}
+          
+.coffee {
+width: 370px;
+height: 536px;
+left: 399px;
+top: 183px;
+background: #EFD478;
+border-radius: 24px;
+}     
+
+.milk {
+width: 370px;
+height: 536px;
+left: 798px;
+top: 183px;
+background: #D6936D;
+border-radius: 24px;
+}
+
+.our-team {
+width: 370px;
+margin-right: 24px;
+height: 719px;
+left: 77px;
+top: 272px;
+background: white;
+box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+          
+.our-team:nth-last-child {
+margin-right: 0;
+}
+          
+          
+.icons-symbol {
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 4px 0px;
+gap: 24px;
+width: 232px;
+height: 48px;
+margin-left: auto;
+margin-right: auto;
+cursor: pointer;
+margin-bottom: 0;
+}
+          
+.icons {
+width: 40px;
+height: 40px;
+fill:var(--color4, #8e8f99)
+          
+}
+          
+.style2 {
+padding-bottom: 60px;
+display: flex;
+}
+          
+.border {
+padding: 32px 16px;
+text-align: center;
+margin-bottom: 8px;
+      
+}
+        
+/*   ____________________________  mobile   _______________________________________   */
+        
+        
+@media screen and (max-width: 767px)  {
+        
+         
+.h3-planschet {
+font-weight: 700;
+font-size: 36px;
+line-height: 40px;
+text-align: center;
+letter-spacing: 0.02em;
+text-transform: capitalize;
+}
+        
+        
+.style2{
+display: block;
+}
+        
+.img-mobile {
+display: block;
+margin: auto;
+margin-bottom: 72px;
+            
+}
+        
+.img-mobile:nth-child(4n) {
+margin-bottom: 0;
+}
+        
+.our-team-mobile:nth-child(4n) {
+margin-left: 0;
+}
+        
+.our-team:nth-child(4n) {
+margin-right: auto; 
+}
+        
+}
+        
+        
+@media screen and (min-width: 480px) {
+            
+        
+.img-mobile {
+display: block;
+margin: auto;
+margin-bottom: 72px;
+        
+}
+        
+.img-mobile:nth-child(4n) {
+margin-bottom: 0;
+}
+          
+        
+.our-team-mobile:nth-child(4n) {
+margin-left: 0;
+}
+        
+.our-team:nth-child(4n) {
+margin-right: auto; 
+}
+              
+        
+}
+        
+        
+/*   ____________________________  planschet   _______________________________________   */
+        
+      @media screen and (min-width: 768px) {
+            
+.img-mobile {
+margin: 0;
+         
+}
+        
+.our-team:nth-child(4n) {
+margin-right: 0;
+}
+        
+        
+.team-list {
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+column-gap: 24px;
+row-gap: 64px;
+margin: 0 auto;
+}
+        
+        
+.icons-symbol {
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 4px 0px;
+gap: 24px;
+width: 232px;
+height: 48px;
+margin-left: auto;
+margin-right: auto;
+margin-top: 8px;
+cursor: pointer;
+         
+}
+        
+        
+.border-mobile {
+margin-bottom: 0px;
+}
+        
+}
+        
+@media screen and (min-width: 768px) and (max-width: 1199px){
+.skils-mobile2 {
+flex-basis: 356px;
+}
+        
+ }
+        
+/*   ____________________________  dask-top   _______________________________________   */
+        
+@media screen and (min-width: 1200px) {
+        
+        
+.products {
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+text-align: center;
+           
+}
+               
+          
+.img-mobile {
+display: block;
+           
+}
+           
+.border-mobile {
+margin-bottom: 0px;
+}
+          
+.our-team-mobile:nth-child(4n) {
+display: block;
+}
+            
+.style2{
+padding-bottom: 60px;
+display: flex;
+}
+        
+        
+}
+    
