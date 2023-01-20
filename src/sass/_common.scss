@@ -17,6 +17,9 @@
   --text-light: #fcfcfc;
   --text-dark: #131313;
   --text-footer: #7a7a7a;
+  --button-green: #0a8817;
+  --button-grey: #ababab;
+  --white: #ffffff;
 }
 body {
   color: var(--text-light);
@@ -36,6 +39,10 @@ ol {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+a {
+  text-decoration: none;
 }
 
 img {
