@@ -1,0 +1,121 @@
+
+
+.advantages-section {
+    background-color: var(--main-green);
+}
+
+.advantages-hero {
+    margin-left: 55px;
+    margin-right: 55px;
+}
+
+.advantages-text-1 {
+
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.22;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    color: var(--text-light);
+}
+
+.advantages-text-2 {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 1.27;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+    color: var(--text-light);
+}
+
+.advantages-korova {
+    position: relative;
+    width: 279px;
+    height: 278px;
+    left: 20px;
+    top: 241;
+}
+
+.korova-fone {
+    position: absolute;
+
+    background: linear-gradient(0deg,
+            rgba(248, 210, 78, 0.7),
+            rgba(248, 210, 78, 0.7)),
+        #d9d9d9;
+    box-shadow: 0px 4.48583px 16.8218px rgba(153, 114, 23, 0.25);
+    border-radius: 150px;
+}
+
+.korova {
+    position: absolute;
+    margin-top: 22px;
+    background: url(../images/mobile/cow.jpg);
+        border-radius: 140px;
+
+}
+
+.advantages-description {
+    text-align: center;
+    /* flex-direction: column; */
+    align-items: flex-start;
+    padding: 0px;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+
+    gap: 4px;
+}
+
+.button-read {
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    width: 164px;
+    height: 42px;
+
+    background: var(--main-yellow);
+    border-radius: 10px;
+    border-color: var(--main-yellow);
+}
+
+.advantages-mass {
+    width: 100%;
+}
+
+.advantages-nomber-mass {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.22;
+
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    margin-left: auto;
+    margin-right: auto;
+
+    color: var(--text-light);
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.advantages-text-mass {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 170%;
+
+    text-align: center;
+
+    color: var(--text-light);
+
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+}
