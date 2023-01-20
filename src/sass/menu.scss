@@ -8,17 +8,17 @@
     z-index: 50;
     overflow-y: scroll;
     background-color: #84a178;
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-    transition: transform;
+    // opacity: 0;
+    // visibility: hidden;
+    // pointer-events: none;
+    // transition: transform;
   }
 
-  .mobile-menu.is-open {
-    opacity: 1;
-    visibility: visible;
-    pointer-events: auto;
-  }
+  //   .mobile-menu.is-open {
+  //     opacity: 1;
+  //     visibility: visible;
+  //     pointer-events: auto;
+  //   }
   .mobile-menu-close-button {
     position: absolute;
     top: 20px;
