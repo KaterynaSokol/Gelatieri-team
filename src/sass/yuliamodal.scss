@@ -68,3 +68,21 @@
     padding: 0;
     transition: fill var(--transition-dur-and-func), background-color var(--transition-dur-and-func);
 }
+
+.data-close-modal:hover,
+.data-close-modal:focus {
+    fill: var(--light-text);
+    background-color: var(--pressed-state-color);
+} 
+
+.text-contact {
+    margin-bottom: 40px;
+    
+    // font-weight: 400;
+    text-align: center;    
+}
+
+.modal-form {
+    display: flex;
+    flex-direction: column;
+}
