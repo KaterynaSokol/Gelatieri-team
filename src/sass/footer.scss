@@ -1,0 +1,135 @@
+.footer {
+  width: 100%;
+  background-color: var(--main-green);
+}
+.container {
+}
+.footer-position {
+  margin-bottom: 40px;
+}
+.footer-text-box {
+  margin-bottom: 60px;
+  width: 232px;
+}
+.footer-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.22;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+.footer-text {
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 1.2;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+.footer-sosial-contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 20px;
+}
+.footer-sosial-media {
+  width: 142px;
+  display: flex;
+  gap: 20px;
+}
+.footer-network-list {
+}
+.footer-network-link {
+  display: flex;
+  width: 34px;
+  height: 34px;
+  text-align: center;
+  border-radius: 50%;
+  padding: 7px;
+  fill: var(--main-green);
+  background-color: var(--main-yellow);
+}
+.footer-network-link:hover,
+.footer-network-link:focus {
+  fill: currentColor;
+}
+.footer-link-icon {
+}
+.footer-contact-text {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.86;
+  color: var(--text-dark);
+}
+.footer-tell {
+  font-weight: 500;
+  color: var(--text-light);
+}
+.footer-copyright {
+  border-top: 1px solid #e1e1e1;
+}
+.footer-copyright-text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.52;
+
+  text-align: center;
+
+  color: var(--text-footer);
+
+  padding-top: 20px;
+  padding-bottom: 24px;
+}
+
+// ----------------------------------------------------------  min-width: 768px -------------------------------------------------------
+@media screen and (min-width: 768px) {
+  .footer-position {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footer-text-box {
+    width: 352px;
+    margin-bottom: 0;
+  }
+  .footer-title {
+    font-size: 26px;
+    margin-bottom: 8px;
+  }
+  .footer-text {
+    font-size: 48px;
+  }
+  .footer-sosial-contacts {
+    justify-content: center;
+  }
+  .footer-contact-text {
+    font-size: 14px;
+  }
+  .footer-sosial-contacts {
+    gap: 34px;
+  }
+  .footer-sosial-media {
+    width: 162px;
+    gap: 30px;
+  }
+}
+
+// ----------------------------------------------------------  min-width: 1200px -------------------------------------------------------
+
+@media screen and (min-width: 1200px) {
+  .footer-text-box {
+    width: 497px;
+  }
+  .footer-title {
+    font-size: 30px;
+    margin-bottom: 14px;
+  }
+  .footer-text {
+    font-size: 58px;
+  }
+  .footer-sosial-contacts {
+    gap: 40px;
+  }
+  .footer-contact-text {
+    font-size: 16px;
+  }
+}
