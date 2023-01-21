@@ -1,10 +1,12 @@
 .contacts-section {
   padding-bottom: 60px;
-  background-image: linear-gradient(
-    to bottom,
-    var(--main-green),
-    var(--main-green)
-  );
+  // background-image: linear-gradient(
+  //   to bottom,
+  //   var(--main-green),
+  //   var(--main-green)
+  // );
+  background: rgb(132, 161, 120);
+  background: linear-gradient(180deg, rgba(1, 1, 1, 0) 25%, #84a178 25%);
 }
 
 .visit-item-titel {
