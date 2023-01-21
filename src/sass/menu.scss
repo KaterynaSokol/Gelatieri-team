@@ -158,6 +158,9 @@
     transform: translateX(100%);
     transition: cubic-bezier(0.25, 0.46, 0.45, 0.94);
   }
+  .mobile-menu.is-open {
+    transform: translateX(0);
+  }
 
   .mobile-menu-container {
     position: relative;
