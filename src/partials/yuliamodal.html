@@ -1,28 +1,63 @@
-<!-- <div class="buy-now is-hidden" data-modal>
+<div class="buy-now is-hidden" data-modal>
   <div class="buy-now-modal">
     <button type="button" class="data-close-modal" data-modal-close>
       <svg class="close-icon" width="11" height="11">
-        <use href=""></use>
+        <use href="./images/sprite.svg#vector"></use>
       </svg>
     </button>
 
+    <h3 class="buy-now-title">Buy now</h3>
+
+    <!-- img -->
     <ul class="img-list">
       <li class="img-item">
-        <img src="" alt="ice cream" />
-        <p></p>
+        <img
+          class="img-fone"
+          srcset="./images/mobile_webp/threetype.webp
+            1x, ./images/mobile_webp/threetype@2.webp 2"
+          width="132"
+          height="132"
+          src="./images/mobile/threetype.jpg"
+          alt="ice cream"
+        />
+        <div class="text-border">
+          <p class="text-label">ice cream</p>
+        </div>
       </li>
       <li class="img-item">
-        <img src="" alt="ice coffee" />
-        <p></p>
+        <img
+          class="img-fone"
+          srcset="
+            ./images/mobile_webp/mokka.webp   1x,
+            ./images/mobile_webp/mokka@2.webp 2x
+          "
+          width="132"
+          height="132"
+          src="./images/mobile/milkshakes.jpg"
+          alt="ice coffee"
+        />
+        <div class="text-border">
+          <p class="text-label">ice coffee</p>
+        </div>
       </li>
       <li class="img-item">
-        <img src="" alt="milkshake" />
-        <p></p>
+        <img
+          class="img-fone"
+          srcset="./images/mobile_webp/latte.webp
+            1x, ./images/mobile_webp/latte@2.webp 2"
+          width="132"
+          height="132"
+          src="./images/mobile/latte.jpg"
+          alt="milkshake"
+        />
+        <div class="text-border">
+          <p class="text-label">milkshake</p>
+        </div>
       </li>
     </ul>
 
+    <!-- label -->
     <form class="buy-now-modal-form">
-      <h2 class="title">Buy now</h2>
       <label class="buy-now-modal-form-field">
         <span class="input-form-modal-wrapper"
           ><input
@@ -56,7 +91,8 @@
         ></textarea>
       </label>
 
+      <!-- button submit -->
       <button type="submit" class="modal-form-submit">Submit</button>
     </form>
   </div>
-</div> -->
+</div>
