@@ -1,26 +1,109 @@
 
-.advantages-section {
+// .advantages-section {
+// width: 100%;
+//     background-color: var(--main-green);
+// }
+@media (max-width: 479px) {
+// .advantages-korova {
+//  margin-left: 60px;
+//  margin-right: 60px;
+//     }
 
-
-    background-color: var(--main-green);
+.description-conteiner {
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
-.advantages-hero {
-    margin-left: 55px;
-    margin-right: 55px;
+
+.creaw-box {
+    padding-top: 50px;
+    padding-bottom: 68px;
+}
+.creaw-box {
+    padding-top: 60px;
+    padding-bottom: 81px;
+}
+.cow {
+    justify-content: center;
+    margin-left: 135px;
+    margin-right: 135px;
+}
+.advantages-text-mass {
+
+    margin-left: 45px;
+    margin-right: 45px;
 }
 
-.visually-hidden {
-    white-space: nowrap;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    border: 0;
-    padding: 0;
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    margin: -1px;
+
+    
 }
+
+@media (min-width: 480px) {
+
+// .advantages-cov-box {
+//     text-align: center;
+// }
+.corova-crup {
+padding-top: 25px;
+}
+// .advantages-korova {
+//  margin-left: 100px;
+//  margin-right: 100px;
+
+
+.advantages-text-2 {
+    margin-left: 140px;
+    margin-right: 140px;
+}
+.description-conteiner {
+
+
+    margin: 0;
+    width: 220px;
+    margin-left: 130px;
+    margin-right: 130px;
+
+    margin-bottom: 4px;
+    // gap: 4px;
+}
+.description-tex {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 176%;
+
+    letter-spacing: 0.04em;
+
+    color: var(--text-light)
+}
+.creaw-box {
+    margin-top: 60px;
+    margin-bottom: 81px;
+}
+.cow {
+    margin-left: 215px;
+        justify-content: center;
+
+}
+
+
+}
+
+
+
+@media screen and (max-width: 767px) {
+.weight {
+
+ margin-top: 28px;
+
+    }
+// .photo-tabel {
+//     img {
+//         width: 330px;
+//         height: 328px;
+//     }
+// }
 
 .advantages-text-1 {
     font-family: 'Montserrat';
@@ -30,128 +113,38 @@
     line-height: 1.22;
 
     margin-top: 61px;
+    padding-left: 55px;
+    padding-right: 55px;
 
     text-align: center;
     text-transform: uppercase;
 
     color: var(--text-light);
 }
+.corova-crup {
+    width: 280px;
+    height: 300px;
+    position: relative;
+    padding: 0;
+    margin: 0;
+   justify-content: center;
+    margin-bottom: 40px;
+    margin-top: 32px;
+}
 
-.advantages-text-2 {
+.description-text {
 
-    font-family: 'Seymour One';
+    font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
-    font-size: 30px;
-    line-height: 1.27;
+    font-size: 12px;
+    line-height: 176%;
+
     text-align: center;
     letter-spacing: 0.04em;
-    text-transform: uppercase;
-    width: 100%;
 
-    margin-top: 12px;
-
-    color: var(--text-light);
+    color: var(--text-light)
 }
-
-.advantages-korova {
-    position: relative;
-    width: 279px;
-    height: 278px;
-    padding-bottom: 40px;
-    margin-top: 32px;
-    margin-left: auto;
-    margin-right: auto;
-
-    background-color: var(--main-yellow);
-    border-radius: 140px;
-}
-
-.korova-fone {
-    position: absolute;
-    margin-top: 22px;
-
-    background: linear-gradient(var(--main-yellow), var(--main-yellow)), var(--gradient); // box-shadow: 0px 4.48583px 16.8218px var(--text-dark);
-    border-radius: 140px;
-
-}
-
-.advantages-description {
-
-    text-align: center;
-    /* flex-direction: column; */
-    align-items: flex-start;
-    margin-top: 40px;
-    padding-left: 50px;
-    padding-right: 50px;
-
-    gap: 4px;
-
-font-family: 'Montserrat';
-font-style: normal;
-font-weight: 400;
-font-size: 12px;
-line-height: 176%;
-        
-        
- text-align: center;
-letter-spacing: 0.04em;
-        
-color: var(--text-light)
-}
-
-// .advantages-description-text {
-//     font-family: 'Montserrat';
-//     font-style: normal;
-//     font-weight: 400;
-//     font-size: 12px;
-//     line-height: 176%;
-
-
-//     text-align: center;
-//     letter-spacing: 0.04em;
-
-//     color: var(--text-light)
-// }
-
-.button-read {
-    left: 0%;
-    right: 0%;
-    top: 0%;
-    bottom: 0%;
-    width: 164px;
-    height: 42px;
-
-    background: var(--main-yellow);
-    border-radius: 10px;
-    border-color: var(--main-yellow);
-}
-
-.advantages-mass {
-    width: 100%;
-}
-
-.cov-fone {
-    display: flex;
-    background-color: var(--main-yellow);
-    border-radius: 25px;
-
-    width: 50px;
-    height: 50px;
-    margin-left: auto;
-    margin-right: auto;
-
-}
-
-.cow-icon {
-    justify-content: center;
-    margin-top: 7px;
-    margin-left: 7px;
-    fill: #131313;
-
-
-}
-
 .advantages-nomber-mass {
     font-weight: 700;
     font-size: 36px;
@@ -162,15 +155,19 @@ color: var(--text-light)
     text-transform: uppercase;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 16px;
 
     color: var(--text-light);
 
-    flex: none;
-    order: 1;
-    flex-grow: 0;
+}
+.kream {
+    margin-top: 22px;
 }
 
 .advantages-text-mass {
+    width: 230px;
+
+
     font-weight: 700;
     font-size: 12px;
     line-height: 170%;
@@ -179,7 +176,311 @@ color: var(--text-light)
 
     color: var(--text-light);
 
-    flex: none;
-    order: 2;
-    flex-grow: 0;
+}
+.text-2-box {
+    width: 200px;
+    text-align: center;
+
+}
+.advantages-text-mass {
+    text-align: center;
+    margin-left: 125px;
+    margin-right: 125px;
+}
+}
+
+ @media screen and (min-width: 768px) {
+//   width: 768px;
+//   padding-left: 32px;
+//   padding-right: 32px;
+
+.advantages-text-1 {
+margin-bottom: 1px;
+
+font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 22px;
+    line-height: 1.22;
+    text-align: center;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+    
+        color: var(--text-light);
+}
+
+.advantages-text-2 {
+  margin-left: 157px;
+  margin-right: 157px;
+font-size: 34px;
+    }
+// .advantages-korova {
+
+// margin-left: 17px;
+//  margin-right: 109px;
+// }
+.text-2-box {
+    width: 454px;
+
+}
+.advantages-cov-box {
+    display: inline-flex;
+    padding-top: 72px;
+}
+.advantages-korova {
+    margin: 0;
+    padding: 0;
+}
+.button-read:hover {
+    background-color: #0A8817;
+    border-radius: #0A8817;
+}
+
+.button-read:focus {
+    background-color: #0A8817;
+}
+
+.button-read:disabled {
+    background-color: #ABABAB;
+}
+.description-conteiner {
+width: 336px;
+
+margin: 0;
+
+
+}
+.corova-crup {
+    padding-right: 38px;
+
+
+}
+.advantages-description {
+    text-align: left;
+    width: 334px;
+    padding-top: 8px;
+}
+
+.description-text {
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 176%;
+
+    text-align: left;
+    letter-spacing: 0.04em;
+
+    color: var(--text-light)
+}
+.button-read {
+    margin-right: 420px;
+}
+.weight {
+
+    // padding: 0;
+
+    // margin-top: 0;
+    // justify-content: center;
+    margin-left: 80px;
+}
+.creaw-box {
+    margin-top: 60px;
+    padding-bottom: 178px;
+    margin-right: 76px;
+    margin-left: 76px;
+}
+
+.kream {
+    margin-top: 0;
+    margin-left: 80px;
+}
+.crem-tetle {
+    display: flex;
+}
+.advantages-text-mass {
+    width: 152px;
+
+font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 174%;
+
+    text-align: center;
+
+    color: var(--text-light);
+
+}
+.advantages-nomber-mass {
+    font-weight: 700;
+    font-size: 58px;
+    line-height: 1.22;
+
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 16px;
+
+    color: var(--text-light);
+
+}
+
+
+ }
+ @media screen and (max-width: 1200px) {
+ //  width: 1200px;
+//  padding-left: 16px;
+//  padding-right: 16px;
+
+      .advantages-section {
+          width: 100%;
+          text-align: center;
+          background-color: var(--main-green);
+      }
+  }
+
+// /////////////////////////////////////////////////
+
+
+
+.advantages-text-2 {
+
+    font-family: 'Seymour One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 1.27;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+
+
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+  
+    margin-top: 12px;
+
+    color: var(--text-light);
+}
+
+.advantages-korova {
+
+    display: inline-flex;
+
+    justify-content: center;
+    width: 279px;
+    height: 278px;
+
+    // margin-top: 32px;
+    // margin-bottom: 40px;
+    // margin-left: 20px;
+    // margin-right: 20px;
+
+    background-color: var(--main-yellow);
+    border-radius: 50%;
+}
+
+.korova-fone {
+
+    position: absolute;
+    margin-top: 22px;
+
+
+    background: linear-gradient(var(--main-yellow), var(--main-yellow)), var(--gradient); // box-shadow: 0px 4.48583px 16.8218px var(--text-dark);
+    border-radius: 50%;
+    justify-content: center;
+
+}
+
+.description-conteiner {
+text-align: center;
+}
+.advantages-description {
+
+    position: relative;
+}
+
+
+.button-read {
+    width: 164px;
+    height: 42px;
+    display: inline-block;
+
+    margin-top: 24px;
+    margin-left: 25px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.28;
+    text-align: center;
+
+    color: var(--text-dark);
+    cursor: pointer;
+
+    background: var(--main-yellow);
+    border-radius: 10px;
+    border-color: var(--main-yellow);
+   transition: background-color 250ms var(--cubic-bezier);
+}
+// .button-read-svg {
+
+// }
+
+
+.advantages-mass {
+    display: inline-flex;
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 68px;
+    justify-content: center;
+    margin: 0;
+}
+.advantages-list {
+    display: block;
+text-align: center;
+    width: 100%;
+ margin-left: 50px;
+ margin-right: 50px;
+    margin: 0;
+
+}
+
+.cov-fone {
+    display: inline-flex;
+    background-color: var(--main-yellow);
+    border-radius: 25px;
+        margin: 0;
+        padding: 0;
+
+
+    width: 50px;
+    height: 50px;
+    // margin-left: auto;
+    // margin-right: auto;
+    margin-bottom: 16px;
+    justify-content: center;
+
+
+
+}
+
+.cow-icon {
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  margin-top: 7px;
+  margin-bottom: 7px;
+    margin-left: 7px;
+    margin-right: 7px;
+
+    fill: #131313;
+
+
 }
