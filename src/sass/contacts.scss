@@ -1,3 +1,13 @@
+.contacts-section {
+  padding-bottom: 60px;
+  background: var(--main-green);
+  background: linear-gradient(
+    180deg,
+    rgba(1, 1, 1, 0) 26%,
+    var(--main-green) 26%
+  );
+}
+
 .visit-item-titel {
   font-weight: 500;
   font-size: 12px;
@@ -29,18 +39,10 @@
 }
 
 .working-period-hours {
-  color: #ababab;
+  color: var(--button-grey);
   font-weight: 500;
   font-size: 12px;
   line-height: 1.86;
-}
-
-.contacts-container {
-  background-image: linear-gradient(
-    to right,
-    var(--main-green),
-    var(--main-green)
-  );
 }
 
 .visit-list {
@@ -55,18 +57,46 @@
   background-color: var(--text-light);
   border-radius: 24px;
   padding: 40px 32px 24px 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .visit-item-titel {
   background-color: var(--main-yellow);
   padding: 4px 22px;
   display: inline-block;
+  border-radius: 4px;
 }
 
 .address-container {
   margin-top: 20px;
   margin-bottom: 24px;
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.address-container::after {
+  content: '';
+  position: relative;
+  display: block;
+  width: 100%;
+  background-color: var(--grey-line);
+  border-radius: 2px;
+  height: 1px;
+  top: 24px;
+}
+
+.working-period::after {
+  content: '';
+  position: relative;
+  display: block;
+  width: 100%;
+  background-color: var(--grey-line);
+  border-radius: 2px;
+  height: 1px;
+  top: 24px;
 }
 
 .address-city {
@@ -76,6 +106,7 @@
 .working-period {
   margin-top: 24px;
   margin-bottom: 24px;
+  width: 100%;
 }
 
 .working-period-weekend {
@@ -98,7 +129,7 @@
   margin-top: 6px;
 }
 
-.contacts-button button {
+.button-our-location {
   width: 196px;
   height: 42px;
   background-color: var(--main-yellow);
@@ -110,12 +141,32 @@
   color: var(--text-dark);
 }
 
-.contacts-button button:hover {
-  background-color: #0a8817;
+.button-franchise {
+  width: 196px;
+  height: 42px;
+  background-color: transparent;
+  border-radius: 10px;
+  border: solid var(--main-yellow) 2px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.28;
+  color: var(--text-dark);
 }
 
-.contacts-button button:focus {
-  color: #fff;
+.button-franchise:hover {
+  border: solid var(--button-green) 2px;
+}
+
+.button-our-location:hover {
+  background-color: var(--button-green);
+}
+
+.button-our-location:focus {
+  color: var(--white);
+}
+
+.button-franchise:focus {
+  color: var(--white);
 }
 
 .contacts-buttons-list {
@@ -126,4 +177,138 @@
   align-items: center;
 }
 
-// ==========================To check grey and white color for availability ==========================
+// ========================= Tablet================================
+
+@media screen and (min-width: 768px) {
+  .visit-list {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .visit-item {
+    width: 224px;
+    padding: 40px 24px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .visit-item h3 {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .address-container {
+    margin-top: 32px;
+    margin-bottom: 32px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .address-city {
+    margin-bottom: 12px;
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .address-street {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .working-period {
+    margin-top: 32px;
+    margin-bottom: 32px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .working-period p {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .address-container:after,
+  .working-period:after {
+    top: 32px;
+    bottom: 32px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contacts-list {
+    margin-top: 32px;
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contacts-list-item a {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contacts-buttons-list {
+    margin-top: 40px;
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contacts-section {
+    padding-bottom: 40px;
+  }
+}
+
+// ========================= Desktop ==================================
+
+@media screen and (min-width: 1200px) {
+  .visit-item {
+    width: 368px;
+    padding: 40px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .address-city {
+    margin-bottom: 8px;
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .address-street {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .working-period p {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts-list-item a {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .working-period-weekend {
+    margin-top: 12px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts-section {
+    padding-bottom: 60px;
+  }
+}
