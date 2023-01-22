@@ -1,12 +1,7 @@
 .reviews-section {
-  padding-top: 32px;
-  padding-bottom: 60px;
-  background: var(--main-green);
-  background: linear-gradient(
-    to top,
-    rgba(1, 1, 1, 0) 86%,
-    var(--main-green) 86%
-  );
+  padding-bottom: 100px;
+  // background: var(--main-green);
+  background: linear-gradient(to top, #01010100 97%, var(--main-green) 84%);
 }
 
 .slider {
@@ -66,12 +61,11 @@
 }
 
 // ============================== Tablet ==================================
-@media screen and (min-width: 768px) {
-  .reviews-section {
-    padding-top: 60px;
-    padding-bottom: 80px;
-  }
-}
+// @media screen and (min-width: 768px) {
+//   .reviews-section {
+//     padding-bottom: 433px;
+//   }
+// }
 
 @media screen and (min-width: 768px) {
   .reviews-container {
@@ -116,12 +110,12 @@
 }
 
 // ==============================================Desktop=============================
-@media screen and (min-width: 1200px) {
-  .reviews-section {
-    padding-top: 80px;
-    padding-bottom: 100px;
-  }
-}
+// @media screen and (min-width: 1200px) {
+//   .reviews-section {
+//     // padding-top: 80px;
+//     padding-bottom: 453px;
+//   }
+// }
 
 @media screen and (min-width: 1200px) {
   .reviews-container {
@@ -142,3 +136,38 @@
     font-size: 16px;
   }
 }
+
+// ==========================Cow manipulations===================
+
+.advantages-section {
+  padding-bottom: 80px;
+}
+
+// .slider {
+//   position: relative;
+//   bottom: 50px;
+// }
+
+// @media screen and (min-width: 768px) {
+//   .slider {
+//     bottom: 145px;
+//   }
+// }
+
+// @media screen and (min-width: 768px) {
+//   .advantages-section {
+//     padding-bottom: 190px;
+//   }
+// }
+
+// @media screen and (min-width: 1200px) {
+//   .slider {
+//     bottom: 100px;
+//   }
+// }
+
+// @media screen and (min-width: 1200px) {
+//   .advantages-section {
+//     padding-bottom: 145px;
+//   }
+// }
