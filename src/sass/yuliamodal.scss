@@ -1,4 +1,4 @@
-.buy-now {
+.js-overlay-modal {
     position: fixed;
     left: 0;
     z-index: 100;
@@ -10,7 +10,7 @@
     /* transition: opacity var(--transition-dur-and-func), visibility var(--transition-dur-and-func); */
 }
 
-.buy-now.is-hidden {
+.js-overlay-modal.is-hidden {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
@@ -51,7 +51,7 @@
     }
 }
 
-.data-close-modal {
+.js-modal-close {
     position: absolute;
     top: 12px;
     right: 12px;
@@ -65,8 +65,8 @@
     /* transition: fill var(--transition-dur-and-func), background-color var(--transition-dur-and-func); */
 }
 
-/* .data-close-modal:hover,
-.data-close-modal:focus {
+/* .js-modal-close:hover,
+.js-modal-close:focus {
     fill: var(--light-text);
     background-color: var(--pressed-state-color);
 }  */
@@ -269,7 +269,7 @@
 
 
 /* MODAL INGREDIENTS */
-.ingredients {
+.js-overlay-modal {
     position: fixed;
     left: 0;
     z-index: 100;
@@ -281,7 +281,7 @@
     /* transition: opacity var(--transition-dur-and-func), visibility var(--transition-dur-and-func); */
 }
 
-.ingredients.is-hidden {
+.js-overlay-modal.is-hidden {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
@@ -321,8 +321,8 @@
     }
 }
 
-/* .data-close-modal:hover,
-.data-close-modal:focus {
+/* .js-modal-close:hover,
+.js-modal-close:focus {
     fill: var(--light-text);
     background-color: var(--pressed-state-color);
 }  */
@@ -518,4 +518,86 @@
 
 .ingredients-modal-form-submit:disabled {
     background-color: var(--button-grey);
+}
+
+/* < !-- VIDEO_MODAL --> */
+.js-overlay-modal {
+    position: fixed;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    background-color: var(--text-light);
+
+    /* transition: opacity var(--transition-dur-and-func), visibility var(--transition-dur-and-func); */
+}
+
+.js-overlay-modal.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.read-more-modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 280px;
+    height: 459px;
+    padding: 28px;
+
+    transform: translate(-50%, -50%);
+
+    background-color: var(--text-light);
+    border: 2px solid var(--main-yellow);
+    border-radius: 10px;
+
+    /* transition: transform var(--transition-dur-and-func), opacity var(--transition-dur-and-func); */
+}
+
+@media screen and (min-width:768px) and (max-width:1200px) {
+    .read-more-modal {
+        padding-left: 60px;
+        padding-right: 60px;
+        width: 568px;
+    }
+}
+
+@media screen and (max-width: 427px) {
+    .read-more-modal {
+        width: 90%;
+        height: auto;
+    }
+}
+
+/* .js-modal-close:hover,
+.js-modal-close:focus {
+    fill: var(--light-text);
+    background-color: var(--pressed-state-color);
+}  */
+
+.read-more-title {
+
+    font-family: Seymour One, sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.4;
+    text-align: center;
+
+    color: var(--text-dark);
+}
+
+.read-more-video {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.video-text {
+    font-family: Montserrat, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.4;
+
+    color: var(--text-dark);
 }
