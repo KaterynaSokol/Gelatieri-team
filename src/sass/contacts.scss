@@ -1,11 +1,7 @@
 .contacts-section {
   padding-bottom: 60px;
   background: var(--main-green);
-  background: linear-gradient(
-    180deg,
-    rgba(1, 1, 1, 0) 26%,
-    var(--main-green) 26%
-  );
+  background: linear-gradient(180deg, #01010100 18%, var(--main-green) 18%);
 }
 
 .visit-item-titel {
@@ -46,6 +42,9 @@
 }
 
 .visit-list {
+  // position: relative;
+  // bottom: 389px;
+  // margin-bottom: -389px;
   display: flex;
   flex-direction: column;
   align-items: center;

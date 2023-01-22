@@ -83,3 +83,21 @@ img {
     padding-right: 16px;
   }
 }
+
+@media screen and (max-width: 767px) {
+  body {
+    background-image: url(../images/mobile/background.jpg);
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  body {
+    background-image: url(../images/tablet/background.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  body {
+    background-image: url(../images/desktop/background.jpg);
+  }
+}
