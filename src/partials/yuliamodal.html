@@ -1,8 +1,8 @@
 <!-- BUY_MODAL -->
 
-<div class="buy-now is-hidden" data-modal="2">
-  <div class="buy-now-modal">
-    <button type="button" class="data-close-modal" data-modal-close>
+<div class="js-overlay-modal is-hidden" data-modal="2">
+  <div class="js-overlay-modal">
+    <button type="button" class="js-modal-close" data-modal-close>
       <svg class="close-icon" width="11" height="11">
         <use href="./images/sprite.svg#vector-black"></use>
       </svg>
@@ -100,10 +100,10 @@
 </div>
 
 <!-- INGREDIENTS MODAL-->
-<div class="ingredients is-hidden" data-modal="3">
+<div class="js-overlay-modal is-hidden" data-modal="3">
   <div class="ingredients-modal">
     <!-- button-close -->
-    <button type="button" class="data-close-modal" data-modal-close>
+    <button type="button" class="js-modal-close" data-modal-close>
       <svg class="close-icon" width="20" height="20">
         <use href="./images/sprite.svg#vector-black"></use>
       </svg>
@@ -220,5 +220,37 @@
         Submit
       </button>
     </form>
+  </div>
+</div>
+
+<!-- VIDEO_MODAL -->
+<div class="js-overlay-modal is-hidden" data-modal="4">
+  <div class="read-more-modal">
+    <!-- button-close -->
+    <button type="button" class="js-modal-close" data-modal-close>
+      <svg class="close-icon" width="20" height="20">
+        <use href="./images/sprite.svg#vector-black"></use>
+      </svg>
+    </button>
+
+    <!-- title h3 -->
+    <h3 class="read-more-title">How it’s made?</h3>
+    <div class="read-more-video">
+      <!-- <img src="" alt="" /><iframe
+        width="448"
+        height="205"
+        src="https://https://www.youtube.com/watch?v=xDuU59VB3m0&ab_channel"
+        frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe> -->
+
+      <p class="video-text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et Lorem ipsum dolor sit amet, consectetur
+        adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+      </p>
+      <button class="button-outline-danger" id="closeModWindow">Close</button>
+    </div>
   </div>
 </div>
