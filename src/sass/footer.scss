@@ -51,7 +51,8 @@
 }
 .footer-network-link:hover,
 .footer-network-link:focus {
-  fill: currentColor;
+  fill: var(--text-light);
+  border-color: none;
 }
 .footer-link-icon {
 }
