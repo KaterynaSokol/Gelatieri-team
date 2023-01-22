@@ -28,7 +28,6 @@
 body {
   color: var(--text-light);
   font-family: Montserrat, sans-serif;
-  
 }
 h1,
 h2,
@@ -85,19 +84,26 @@ img {
 }
 
 @media screen and (max-width: 767px) {
-  body {
+  main {
     background-image: url(../images/mobile/background.jpg);
+    width: 100%;
   }
 }
 
 @media screen and (max-width: 1199px) {
-  body {
+  main {
     background-image: url(../images/tablet/background.jpg);
+    width: 100%;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  body {
+  main {
     background-image: url(../images/desktop/background.jpg);
+    width: 100%;
   }
+}
+
+main {
+  overflow-x: hidden;
 }
