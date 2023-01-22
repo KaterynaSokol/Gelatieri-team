@@ -215,19 +215,22 @@ display: block;
               
 
 .icons-symbol {
-margin-top: 109px;
+margin-top: 58px;
+justify-content: center;
 align-items: center;
 margin-left: auto;
 margin-right: auto;
 cursor: pointer;
+border: none;
+background: transparent;
+            
 }
-                
+                                        
 .icons {
 width: 40px;
 height: 16px;
 left: 0px;
-margin-bottom: 24px;
-          
+outline: none;                     
 }
               
 }
@@ -432,16 +435,16 @@ align-items: center;
 margin-left: auto;
 margin-right: auto;
 cursor: pointer;
-
-
+border: none;
+background: transparent;
+      
 }
-                            
+                                        
 .icons {
 width: 40px;
 height: 16px;
 left: 0px;
-margin-bottom: 24px;
-                      
+outline: none;                     
 }
                 
               
@@ -602,13 +605,22 @@ margin-right: 16px;
 }
                      
 .icons-symbol {
-flex-direction: row;
+margin-top: 58px;
 justify-content: center;
 align-items: center;
 margin-left: auto;
 margin-right: auto;
 cursor: pointer;
- margin-top: 58px;              
+border: none;
+background: transparent;
+            
+}
+                                        
+.icons {
+width: 40px;
+height: 16px;
+left: 0px;
+outline: none;                     
 }
                       
 
@@ -620,13 +632,7 @@ top: 336px;
 margin-left: auto;
 }
 
-.icons {
-width: 40px;
-height: 16px;
-left: 0px;
-margin-bottom: 20px;
-                            
-}
+
                         
 }
               
@@ -822,26 +828,24 @@ margin-right: 0;
                       
                       
 .icons-symbol {
+margin-top: 58px;
 justify-content: center;
 align-items: center;
-width: 40px;
-height: 46px;
 margin-left: auto;
 margin-right: auto;
-margin-top: 58px;
-margin-bottom: 67px;
 cursor: pointer;
-margin-bottom: 0;
-left: 564px;
-top: 643px;
+border: none;
+background: transparent;
+      
 }
-                      
+                                  
 .icons {
 width: 40px;
 height: 16px;
 left: 0px;
-                
+outline: none;                     
 }
+                 
                       
 .style2 {
 display: flex;
