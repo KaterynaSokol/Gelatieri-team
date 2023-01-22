@@ -1,53 +1,88 @@
 <!-- Franchise modal  -->
-<div class="modal modal--franchise" id="modal-franchise" role="dialog" aria-labelledby="modal-title-franchise"
-	data-modal="modal_franchise">
+<div class="backdrop-franchise is-hidden" data-modal>
+  <div
+    class="modal--franchise"
+    id="modal-franchise"
+    role="dialog"
+    aria-labelledby="modal-title-franchise"
+    data-modal="modal_franchise"
+  >
+    <!-- CLose button -->
 
-	<!-- Modal  title -->
-	<h3 class="modal-franchise__title" id="modal-title-franchise">
-		Thank you for your interest in owning an Ice Cream shop
-	</h3>
+    <button
+      class="close-btn"
+      type="button"
+      aria-label="Close modal window"
+      aria-controls="modal-franchise"
+      data-modal-close
+    >
+      <svg class="close-button__icon" width="11" height="11">
+        <use href="./images/sprite.svg#vector-black"></use>
+      </svg>
+    </button>
 
-	<p class="modal-franchise__description">
-		Due to the overwhelming volume of franchise requests we are not accepting
-		new franchisee applications at this time. Once the application process
-		resumes, we will contact you for further information. Please fill out the
-		contact information below and we will reach out for additional information.
-		We appreciate your patience.
-	</p>
+    <!-- Modal  title -->
 
-	<form class="modal-franchise__form" name="modal__form">
+    <h3 class="modal-franchise__title" id="modal-title-franchise">
+      Thank you for your interest in owning an Ice Cream shop
+    </h3>
 
-		<div role="group" class="modal-franchise__field-group">
-			<!-- Name -->
-			<input type="text" class="modal-franchise__input" name="name" pattern="[a-zA-Z\u0400-\u04ff\s]{3,30}"
-				title="" required placeholder="Name" title="Name" />
-			</label>
+    <p class="modal-franchise__description">
+      Due to the overwhelming volume of franchise requests we are not accepting
+      new franchisee applications at this time. Once the application process
+      resumes, we will contact you for further information. Please fill out the
+      contact information below and we will reach out for additional
+      information. We appreciate your patience.
+    </p>
 
-			<!-- Telephone -->
-			<input type="tel" class="modal-franchise__input" required name="tel" pattern="[+\0-9]{10,}"
-				title=" +61XXXXXXXXXXXX, " placeholder="Phone" />
-			</label>
+    <form class="modal-franchise__form" name="modal__form">
+      <div role="group" class="modal-franchise__field-group">
+        <!-- Name -->
+        <input
+          type="text"
+          class="modal-franchise__input"
+          name="name"
+          pattern="[a-zA-Z\u0400-\u04ff\s]{3,30}"
+          title=""
+          required
+          placeholder="Name"
+          title="Name"
+        />
 
-			<!-- Email -->
-			<input type="email" class="modal-franchise__input" required name="mail" placeholder="Email" />
-			</label>
+        <!-- Telephone -->
+        <input
+          type="tel"
+          class="modal-franchise__input"
+          required
+          name="tel"
+          pattern="[+\0-9]{10,}"
+          title=" +61XXXXXXXXXXXX, "
+          placeholder="Phone"
+        />
 
-			<!-- Comment -->
-			<textarea class="modal-franchise__message" name="comment" rows="3" placeholder="Comment"></textarea>
-			</label>
-		</div>
+        <!-- Email -->
+        <input
+          type="email"
+          class="modal-franchise__input"
+          required
+          name="mail"
+          placeholder="Email"
+        />
 
-		<!-- Form  button -->
-		<button class="button modal-franchise__button" type="submit">Submit</button>
-	</form>
-
-	<!-- CLose button -->
-	<button class="close-btn js-modal-close" type="button" aria-label="Close modal window"
-		aria-controls="modal-franchise">
-		<svg class="close-button__icon" width="24" height="24">
-			<use href="./images/sprite.svg#vector-black"></use>
-		</svg>
-	</button>
+        <!-- Comment -->
+        <textarea
+          class="modal-franchise__message"
+          name="comment"
+          rows="3"
+          placeholder="Comment"
+        ></textarea>
+      </div>
+      <!-- Form  button -->
+    </form>
+    <div class="button-franchise-flex">
+      <button class="button modal-franchise__button" type="submit">
+        Submit
+      </button>
+    </div>
+  </div>
 </div>
-
-</body>
