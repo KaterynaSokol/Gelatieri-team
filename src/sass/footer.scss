@@ -1,11 +1,11 @@
 .footer {
   width: 100%;
   background-color: var(--main-green);
+  border-bottom: 1px solid var(--grey-line);
 }
 .container {
 }
 .footer-position {
-  padding-top: 60px;
   padding-bottom: 40px;
   // margin-bottom: 40px;
 }
@@ -52,7 +52,8 @@
 }
 .footer-network-link:hover,
 .footer-network-link:focus {
-  fill: currentColor;
+  fill: var(--text-light);
+  outline: none;
 }
 .footer-link-icon {
 }
@@ -70,7 +71,7 @@ a.footer-tell {
   color: var(--text-light);
 }
 .footer-copyright {
-  border-top: 1px solid #e1e1e1;
+  background-color: var(--main-green);
 }
 .footer-copyright-text {
   font-weight: 700;

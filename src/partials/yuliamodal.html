@@ -1,8 +1,10 @@
-<div class="buy-now is-hidden" data-modal>
+<!-- BUY_MODAL -->
+
+<div class="js-overlay-modal is-hidden" data-modal="2">
   <div class="buy-now-modal">
-    <button type="button" class="data-close-modal" data-modal-close>
+    <button type="button" class="js-modal-close" data-modal-close>
       <svg class="close-icon" width="11" height="11">
-        <use href="./images/sprite.svg#vector"></use>
+        <use href="./images/sprite.svg#vector-black"></use>
       </svg>
     </button>
 
@@ -33,7 +35,7 @@
           "
           width="132"
           height="132"
-          src="./images/mobile/milkshakes.jpg"
+          src="./images/mobile/icecoffee.jpg"
           alt="ice coffee"
         />
         <div class="text-border">
@@ -94,5 +96,161 @@
       <!-- button submit -->
       <button type="submit" class="modal-form-submit">Submit</button>
     </form>
+  </div>
+</div>
+
+<!-- INGREDIENTS MODAL-->
+<div class="js-overlay-modal is-hidden" data-modal="3">
+  <div class="ingredients-modal">
+    <!-- button-close -->
+    <button type="button" class="js-modal-close" data-modal-close>
+      <svg class="close-icon" width="20" height="20">
+        <use href="./images/sprite.svg#vector-black"></use>
+      </svg>
+    </button>
+    <!-- title h3 -->
+    <h3 class="ingredients-title">Chololate icecream</h3>
+
+    <!-- img -->
+    <div class="ingredients-img-item">
+      <img
+        class="ingredients-img-fone"
+        srcset="./images/mobile/chocolate.jpg 1x, ./images/mobile/chocolate@2.jpg 2"
+        width="132"
+        height="132"
+        src="./images/mobile/chocolate.jpg"
+        alt="chocolate"
+      />
+    </div>
+
+    <!-- value -->
+    <ul class="value-list">
+      <li class="value-item">
+        <p class="numerical-value">320</p>
+        <p class="dimension">kcal</p>
+      </li>
+      <li class="value-item">
+        <p class="numerical-value">4g</p>
+        <p class="dimension">Prote...</p>
+      </li>
+      <li class="value-item">
+        <p class="numerical-value">8,2g</p>
+        <p class="dimension">Fats</p>
+      </li>
+      <li class="value-item">
+        <p class="numerical-value">40,4g</p>
+        <p class="dimension">Carbs</p>
+      </li>
+    </ul>
+
+    <!-- title h4 -->
+    <h4 class="ingredients-list-title">Ingredients</h4>
+
+    <ul class="ingredients-list">
+      <li class="ingredients-value-item">
+        <p class="ingredients-name">
+          <span>Milk</span><span class="ingredients-units">100ml</span>
+        </p>
+      </li>
+      <li class="ingredients-value-item">
+        <p class="ingredients-name">
+          <span>Belgian chocolate</span
+          ><span class="ingredients-units">20g</span>
+        </p>
+      </li>
+      <li class="ingredients-value-item">
+        <p class="ingredients-name">
+          <span>Cream</span><span class="ingredients-units">150 ml</span>
+        </p>
+      </li>
+      <li class="ingredients-value-item">
+        <p class="ingredients-name">
+          <span class="ingredients-units">Cocoa powder</span><span> 30g</span>
+        </p>
+      </li>
+      <li class="ingredients-value-item">
+        <p class="ingredients-name">
+          <span class="ingredients-units">Sugar</span>40g<span></span>
+        </p>
+      </li>
+      <li class="ingredients-value-item">
+        <p class="ingredients-name">
+          <span class="ingredients-units">Vanilla sugar</span><span>10g</span>
+        </p>
+      </li>
+    </ul>
+
+    <!-- label -->
+    <form class="ingredients-modal-form">
+      <label class="ingredients-modal-form-field">
+        <span class="input-form-modal-wrapper"
+          ><input
+            type="text"
+            name="user_name"
+            class="ingredients-modal-form-input"
+            required
+            pattern="[a-zA-Zа-яА-ЯіІїЇ]+"
+            minlength="2"
+            placeholder="Name"
+        /></span>
+      </label>
+      <label class="ingredients-modal-form-field">
+        <span class="input-form-modal-wrapper">
+          <input
+            type="tel"
+            name="user_phone"
+            class="ingredients-modal-form-input"
+            required
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+            title="xxx-xxx-xx-xx"
+            placeholder="Phone"
+          />
+        </span>
+      </label>
+      <label class="ingredients-modal-form-field-comment">
+        <textarea
+          name="user_message"
+          class="ingredients-modal-form-message"
+          placeholder="Comment"
+        ></textarea>
+      </label>
+
+      <!-- button submit -->
+      <button type="submit" class="ingredients-modal-form-submit">
+        Submit
+      </button>
+    </form>
+  </div>
+</div>
+
+<!-- VIDEO_MODAL -->
+<div class="js-overlay-modal is-hidden" data-modal="4">
+  <div class="read-more-modal">
+    <!-- button-close -->
+    <button type="button" class="js-modal-close" data-modal-close>
+      <svg class="close-icon" width="20" height="20">
+        <use href="./images/sprite.svg#vector-black"></use>
+      </svg>
+    </button>
+
+    <!-- title h3 -->
+    <h3 class="read-more-title">How it’s made?</h3>
+    <div class="read-more-video">
+      <!-- <img src="" alt="" /><iframe
+        width="448"
+        height="205"
+        src="https://https://www.youtube.com/watch?v=xDuU59VB3m0&ab_channel"
+        frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe> -->
+
+      <p class="video-text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et Lorem ipsum dolor sit amet, consectetur
+        adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+      </p>
+      <button class="button-outline-danger" id="closeModWindow">Close</button>
+    </div>
   </div>
 </div>
