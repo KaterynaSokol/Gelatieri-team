@@ -1,7 +1,8 @@
 .reviews-section {
-  padding-bottom: 100px;
+  padding-bottom: 10px;
+  padding-bottom: 390px;
   // background: var(--main-green);
-  background: linear-gradient(to top, #01010100 97%, var(--main-green) 84%);
+  // background: linear-gradient(to top, #01010100 97%, var(--main-green) 84%);
 }
 
 .slider {
@@ -58,6 +59,8 @@
 
 .reviews-container {
   padding: 0 20px 0;
+  position: relative;
+  bottom: 50px;
 }
 
 // ============================== Tablet ==================================
@@ -70,6 +73,7 @@
 @media screen and (min-width: 768px) {
   .reviews-container {
     padding: 0 32px 0;
+    bottom: 145px;
   }
 }
 
@@ -143,22 +147,37 @@
   padding-bottom: 80px;
 }
 
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  margin-bottom: -12px;
+}
+
+// @media screen and (min-width: 768px) {
+//   .swiper-horizontal > .swiper-pagination-bullets,
+//   .swiper-pagination-bullets.swiper-pagination-horizontal,
+//   .swiper-pagination-custom,
+//   .swiper-pagination-fraction {
+//     margin-bottom: -22px;
+//   }
+// }
 // .slider {
 //   position: relative;
 //   bottom: 50px;
 // }
 
 // @media screen and (min-width: 768px) {
-//   .slider {
-//     bottom: 145px;
+//   .reviews-section {
+//     padding-bottom: 300px;
 //   }
 // }
 
-// @media screen and (min-width: 768px) {
-//   .advantages-section {
-//     padding-bottom: 190px;
-//   }
-// }
+@media screen and (min-width: 768px) {
+  .advantages-section {
+    padding-bottom: 140px;
+  }
+}
 
 // @media screen and (min-width: 1200px) {
 //   .slider {
