@@ -20,7 +20,8 @@
   --button-green: #0a8817;
   --button-grey: #ababab;
   --white: #ffffff;
-  --grey-line: #E1E1E1;
+  --grey-line: #e1e1e1;
+  --green-line: #9CBE8F;
 }
 body {
   color: var(--text-light);
@@ -54,7 +55,6 @@ img {
 .link {
   text-decoration: none;
 }
-
 
 .container {
   justify-content: center;
