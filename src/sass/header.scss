@@ -33,7 +33,27 @@
         fill: var(--main-yellow);
     }
 
-    .site-nav {
+    .logo:hover .header-logo-svg,
+    .logo:focus .header-logo-svg {
+        animation-name: changeSvgColor;
+        animation-duration: 1000ms;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes changeSvgColor {
+        0% {
+          fill: var(--main-yellow);
+        }
+      
+        50% {
+          fill: yellow;
+        }
+      
+        100% {
+          fill: var(--main-yellow);
+        }
+    }
+      .site-nav {
         display: none;
     }
 
@@ -43,7 +63,6 @@
 
     .header-modal-open {
         display: flex;
-        // align-items: center;
         align-items: flex-end;
         position: absolute;
         bottom: 0;
@@ -97,11 +116,9 @@
         padding: 0;
         border: 0;
         cursor: pointer;
-        // 
         align-items: center;
         justify-content: center;
         gap: 8px;
-        // 
         position: absolute;
         right: 0;
         bottom: 0;
@@ -121,11 +138,6 @@
     .header-button-span-text {
         width: 65px;
         height: 18px;
-        // 
-        // position: absolute;
-        // left: 36px;
-        // top: 12px;
-        // 
         font-family: 'Montserrat';
         font-style: normal;
         font-weight: 600;
@@ -150,13 +162,6 @@
         fill: var(--white);
     }
 
-
-    // .header-button-span-svg {
-    //     position: absolute;
-    //     top: 12px;
-    //     // top: 15px;
-    //     left: 105px;
-    // }
 }
 
 @media screen and (min-width: 1200px) {
@@ -168,11 +173,6 @@
         width: 1168px;
         height: 65px;
     }
-
-    // .logo {
-    //     width: 60px;
-    //     height: 65px;
-    // }
 
     .logo:focus {
         outline: none;
@@ -196,14 +196,10 @@
 
     .site-nav {
         display: flex;
-        // flex-direction: row;
-        // align-items: flex-start;
-        // padding: 0px;
         justify-content: space-between;
         position: absolute;
         left: 368px;
         top: 32px;
-        // width: 449px;
         width: 444px;
         height: 20px;
     }
@@ -227,11 +223,4 @@
          color: var(--main-yellow);
          outline: none;
     }
-
-    //  .site-nav-item .link:focus {
-    //      color: var(--white);
-    //      outline: none;
-    // }
-
-
 }
