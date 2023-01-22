@@ -1,3 +1,7 @@
+:root {
+    --cubic-bezier: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .header {
     padding-bottom: 0;
     background: #84A178;
@@ -20,7 +24,7 @@
         position: relative;
         width: 280px;
         height: 37px;
-        background-color: var(--main-green);
+        // background-color: var(--main-green);
     }
 
     .logo {
@@ -35,6 +39,7 @@
     .header-logo-svg {
         width: 40px;
         height: 37px;
+        fill: var(--main-yellow);
     }
 
     .site-nav {
@@ -115,7 +120,14 @@
         height: 42px;
         background-color: var(--main-yellow);
         border-radius: 10px;
+        transition: background-color 250ms var(--cubic-bezier);
     }
+    .header-button:hover,
+    .header-button:focus {
+        background-color: var(--button-green);
+        outline: none;
+    }
+
 
     .header-button-span-text {
         width: 65px;
@@ -134,7 +146,21 @@
         align-items: center;
         text-align: center;
         color: #000000;
+        transition: color 250ms var(--cubic-bezier);
     }
+
+    .header-button-span-svg {
+        transition: fill 250ms var(--cubic-bezier);    }
+
+
+    .header-button:focus .header-button-span-text {
+        color: var(--white);
+    }
+
+    .header-button:focus .header-button-span-svg {
+        fill: var(--white);
+    }
+
 
     // .header-button-span-svg {
     //     position: absolute;
@@ -158,6 +184,11 @@
     //     width: 60px;
     //     height: 65px;
     // }
+
+    .logo:focus {
+        outline: none;
+    }
+
     .header-logo-svg {
         width: 60px;
         height: 65px;
@@ -196,15 +227,22 @@
         line-height: 1.21;
         display: flex;
 		align-items: center;
-        // color: var(--text-light);
     }
 
     .site-nav-item .link {
         color: var(--text-light);
+        transition: color 250ms var(--cubic-bezier);
     }
-     .site-nav-item .link:hover,
-     .site-nav-item .link:focus {
+    .site-nav-item .link:hover,
+    .site-nav-item .link:focus {
          color: var(--main-yellow);
+         outline: none;
     }
+
+    //  .site-nav-item .link:focus {
+    //      color: var(--white);
+    //      outline: none;
+    // }
+
 
 }
