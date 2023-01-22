@@ -98,8 +98,156 @@ position: relative;
     width: 50px;
     height: 50px;
 
+<<<<<<< Updated upstream
     margin-bottom: 16px;
     justify-content: center;
+=======
+ 
+//  @media (min-device-pixel-ratio:2),
+//  (min-resolution: 192dpi),
+//  (min-resolution: 2dppx) {
+// .advantages-cov-box {
+//  background-image:
+//     url(../images/mobile_webp/cow.webp);
+//     }
+//  }
+
+
+//  @media  (min-device-pixel-ratio:2),
+//  (min-resolution: 192dpi),
+//  (min-resolution: 2dppx) {
+// .advantages-cov-box {
+//  background-image:
+//  url(../images/mobile_webp/cow@2.webp);
+//   }
+//  }
+
+//  @media screen and (max-width: 767px) {
+//     .advantages-cov-box {
+//     background-image:
+//           url(../images/mobile_webp/cow.webp);
+//      background-position: center;
+//        background-repeat: no-repeat;
+//        background-size: cover;
+//         border-radius: 50%;
+//     }
+//   }
+//  @media (min-device-pixel-ratio:2),
+//  (min-resolution: 192dpi),
+//  (min-resolution: 2dppx) {
+// .advantages-cov-box {
+//     background-image:
+//     url(../images/mobile_webp/cow.webp);
+//      }
+//     }
+
+
+// @media (min-device-pixel-ratio:2),
+//  (min-resolution: 192dpi),
+//  (min-resolution: 2dppx) {
+// .advantages-cov-box {
+//  background-image:
+//      url(../images/desktop_webp/cow@2.webp);
+//      }
+
+// .korova-fone {
+//  background: linear-gradient(var(--main-yellow), var(--main-yellow)), var(--gradient);
+//  border-radius: 50%;
+//  justify-content: center;
+//  margin-top: 26px;
+//  position: absolute;
+//       }
+//  }
+
+
+
+//   @media screen and (min-width:768px) {
+// .korova-fone {
+
+//  background: linear-gradient(var(--main-yellow), var(--main-yellow)), var(--gradient);
+//  border-radius: 50%;
+//  justify-content: center;
+//  margin-top: 26px;
+//  position: absolute;
+//   max-width: 330px;
+//  max-height: 350px;
+//     }
+
+
+//     .advantages-cov-box {
+//     background-image:
+//     url(../images/tablet_webp/cow.webp);
+// background-position: center;
+// background-repeat: no-repeat;
+// background-size: cover;
+// max-width: 330px;
+// height: 350px;
+
+// border-radius: 50%;
+//  }
+// .korova-fone {
+
+//     background: linear-gradient(var(--main-yellow), var(--main-yellow)), var(--gradient);
+//     border-radius: 50%;
+//     justify-content: center;
+//     margin-top: 26px;
+//     position: absolute;
+//     max-width: 330px;
+// max-height: 350px;
+//  }
+//   }
+
+
+
+
+
+ @media screen and (max-width: 767px) {
+     .weight {
+
+         margin-top: 28px;
+
+     }
+
+     // .photo-tabel {
+     //     img {
+     //         width: 330px;
+     //         height: 328px;
+     //     }
+     // }
+
+
+     .advantages-text-1 {
+         font-family: 'Montserrat';
+         font-style: normal;
+         font-weight: 700;
+         font-size: 18px;
+         line-height: 1.22;
+
+         margin-top: 61px;
+         padding-left: 55px;
+         padding-right: 55px;
+
+         text-align: center;
+         text-transform: uppercase;
+
+         color: var(--text-light);
+     }
+
+     .corova-crup {
+         width: 280px;
+         height: 300px;
+         display: flex;
+
+         position: relative;
+         padding: 0;
+         margin: 0;
+         justify-content: center;
+         // margin-bottom: 40px;
+         // margin-top: 32px;
+         margin-left: 100px;
+         margin-right: 100px;
+     }
+>>>>>>> Stashed changes
 
 }
 
@@ -303,10 +451,37 @@ font-family: 'Montserrat';
     line-height: 170%;
 
 
+<<<<<<< Updated upstream
     text-align: center;
 
     color: var(--text-light);
 }
+=======
+.advantages-text-1 {
+ padding-left: 412px;
+ padding-right: 412px;
+
+     }
+.advantages-description {
+    text-align: left;
+    width: 463px;
+   padding-top: 8px;
+    padding-right: 34px;
+}
+.description-text {
+    
+ font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 176%;
+    
+    text-align: left;
+    letter-spacing: 0.04em;
+    
+      color: var(--text-light)
+         }
+>>>>>>> Stashed changes
 
   }
 
