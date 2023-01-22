@@ -80,33 +80,67 @@
 }
 // desctop
 .hero-link:focus {
+    outline: none;
     color: #FCFCFC;
 }
 
 
 
+.hero-icecream {
+    position: absolute;
+    bottom: 0;
+    right: 20px;
+}
 
+.hero-plate {
+    display: none;
+    position: absolute;
+}
 
 // ============ mobile ================
 @media screen and (max-width: 767px) {
+    // .hero-wrapper {
+    //     padding-top: 40px;
+    //     padding-bottom: 150px;
+
+    //     background-image: 
+    //     url(../images/mobile/icecream.png), 
+    //     url(../images/hero-mobile.svg);
+    //     background-size: 218px auto, 320px;
+    //     background-position: right 20px bottom, right bottom;
+    // }
+
     .hero-wrapper {
-        padding-top: 99px;
+        padding-top: 40px;
         padding-bottom: 150px;
 
-        background-image: 
-        url(../images/mobile/icecream.png), 
-        url(../images/hero-mobile.svg);
-        // background-repeat: no-repeat;
-        background-size: 218px auto, 320px;
-        background-position: right 20px bottom, right bottom;
+        background-image: url(../images/hero-mobile.svg);
+        // background-size: 320px;
+        background-position: right bottom;
     }
+
+    // .hero-icecream {
+    //     position: absolute;
+    //     bottom: 0;
+    //     right: 20px;
+    // }
+
+
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 479px) {
+    // .hero-wrapper {
+    //     padding-bottom: 236px;
+    //     background-size: 177px, 320px;
+    //     background-position: right 60px bottom, right bottom;  
+    // }
+
     .hero-wrapper {
-        padding-bottom: 236px;
-        background-size: 177px, 320px;
-        background-position: right 60px bottom, right bottom;  
+        padding-bottom: 236px;  
+    }
+
+    .hero-icecream {
+        right: 60px;
     }
 }
 // == end ====== /mobile ================
@@ -123,15 +157,28 @@
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
     .hero-wrapper {
-        padding-top: 80px;
+        padding-top: 14px;
         padding-bottom: 24px;
 
-        background-image: 
-        url(../images/tablet/icecream.png), 
-        url(../images/tablet/icecreamplate.png),
-        url(../images/hero-tablet.svg);
-        background-size: 268px auto, 152px, 100%;
-        background-position: right 92px bottom, left 32px bottom 12px, bottom;
+        // background-image: 
+        // url(../images/tablet/icecream.png), 
+        // url(../images/tablet/icecreamplate.png),
+        // url(../images/hero-tablet.svg);
+        // background-size: 268px auto, 152px, 100%;
+        // background-position: right 92px bottom, left 32px bottom 12px, bottom;
+
+        background-image: url(../images/hero-tablet.svg);
+        background-position: bottom;
+    }
+
+    .hero-icecream {
+        right: 92px;
+    }
+
+    .hero-plate {
+        display: block;
+        left: 32px;
+        bottom: 12px;
     }
 
     .hero-title {
@@ -165,7 +212,8 @@
     .hero-numbers-wrapper {
         display: block;
         position: absolute;
-        top: 94px;
+        // top: 94px;
+        top: 28px;
         right: 32px;
         font-family: 'Montserrat';
         font-style: normal;
@@ -201,15 +249,29 @@
 
 @media screen and (min-width: 1200px) {
     .hero-wrapper {
-        padding-top: 118px;
+        // padding-top: 118px;
+        padding-top: 48px;
         padding-bottom: 103px;
 
-        background-image: 
-        url(../images/desktop/icecream.png), 
-        url(../images/desktop/icecreamplate.png),
-        url(../images/hero-desktop.svg);
-        background-size: 456px auto, 225px, 100%;
-        background-position: right 92px bottom, left 16px bottom 65px, bottom;
+        // background-image: 
+        // url(../images/desktop/icecream.png), 
+        // url(../images/desktop/icecreamplate.png),
+        // url(../images/hero-desktop.svg);
+        // background-size: 456px auto, 225px, 100%;
+        // background-position: right 92px bottom, left 16px bottom 65px, bottom;
+
+        background-image: url(../images/hero-desktop.svg);
+        background-position: bottom;
+    }
+
+    .hero-icecream {
+        right: 92px;
+    }
+
+    .hero-plate {
+        display: block;
+        left: 16px;
+        bottom: 65px;
     }
 
     .hero-title {
@@ -244,7 +306,8 @@
     }
 
     .hero-numbers-wrapper {
-        top: 126px;
+        // top: 126px;
+        top: 56px;
         right: 16px;
     }
     
@@ -264,4 +327,51 @@
 }
 
 // === end ========= /desctop 1200px ================
+
+
+// =====anime===========
+
+.hero-plate {
+    animation-name: anime-plate;
+    animation-duration: 1800ms;
+    animation-timing-function: linear;
+}
+
+.hero-icecream {
+    transform-origin: bottom center;
+    animation-name: anime-icecream;
+    animation-duration: 1000ms;
+    animation-timing-function: linear;
+}
+
+@keyframes anime-plate {
+    0% {
+      opacity: 0;
+      transform: rotate(-10deg) translate(-10px, -5px);
+    }
+    60% {
+        opacity: 0;
+        transform: rotate(-10deg) translate(-10px, -5px);
+      }
+    100% {
+      opacity: 1;
+      transform: rotate(0deg) translate(0, 0);
+    }
+  }
+
+  @keyframes anime-icecream {
+    0% {
+      opacity: 0;
+      transform: rotate(0deg);
+    }
+    40% {
+        opacity: 0;
+        transform: rotate(0.4deg);
+      }
+    100% {
+      opacity: 1;
+      transform: rotate(0deg);
+    }
+  }
+
 
