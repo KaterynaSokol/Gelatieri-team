@@ -1,0 +1,205 @@
+.reviews-section {
+  padding-bottom: 10px;
+  padding-bottom: 390px;
+  // background: var(--main-green);
+  // background: linear-gradient(to top, #01010100 97%, var(--main-green) 84%);
+}
+
+.slider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 18px;
+}
+
+.slider-acting {
+  gap: 0px;
+}
+.reviews-slider-icecream img {
+  border-radius: 18px;
+}
+
+.slide-complete {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.reviews-slider-icecream {
+  max-width: 440px;
+  margin-bottom: 80px;
+  border-radius: 18px;
+}
+
+.reviews-slider-profile {
+  margin-bottom: 32px;
+}
+
+.slider-acting {
+  margin-bottom: 12px;
+}
+
+.reviews-slider-coment {
+  margin-bottom: 32px;
+}
+
+.reviews-slider-coment p {
+  max-width: 280px;
+  background-color: var(--main-green);
+  padding: 35px 39px;
+  border-radius: 10px;
+  font-size: 12px;
+  line-height: 2.55;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+
+.profile-name p {
+  color: var(--text-dark);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.86;
+}
+
+.reviews-container {
+  padding: 0 20px 0;
+  position: relative;
+  bottom: 50px;
+}
+
+// ============================== Tablet ==================================
+// @media screen and (min-width: 768px) {
+//   .reviews-section {
+//     padding-bottom: 433px;
+//   }
+// }
+
+@media screen and (min-width: 768px) {
+  .reviews-container {
+    padding: 0 32px 0;
+    bottom: 145px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .reviews-slider-icecream {
+    max-width: 100%;
+    margin-bottom: 100px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .slider-acting {
+    margin-bottom: 32px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .reviews-slider-coment {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .reviews-slider-coment p {
+    max-width: 100%;
+    padding: 28px 80px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.86;
+    letter-spacing: 0.04em;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .profile-name p {
+    font-size: 16px;
+  }
+}
+
+// ==============================================Desktop=============================
+// @media screen and (min-width: 1200px) {
+//   .reviews-section {
+//     // padding-top: 80px;
+//     padding-bottom: 453px;
+//   }
+// }
+
+@media screen and (min-width: 1200px) {
+  .reviews-container {
+    padding: 0 94px 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .reviews-slider-icecream {
+    margin-bottom: 140px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .reviews-slider-coment p {
+    padding: 43px 110px;
+    font-weight: 500;
+    font-size: 16px;
+  }
+}
+
+// ==========================Cow manipulations===================
+
+.advantages-section {
+  padding-bottom: 80px;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  margin-bottom: -12px;
+}
+
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: var(--main-green);
+}
+
+// @media screen and (min-width: 768px) {
+//   .swiper-horizontal > .swiper-pagination-bullets,
+//   .swiper-pagination-bullets.swiper-pagination-horizontal,
+//   .swiper-pagination-custom,
+//   .swiper-pagination-fraction {
+//     margin-bottom: -22px;
+//   }
+// }
+// .slider {
+//   position: relative;
+//   bottom: 50px;
+// }
+
+// @media screen and (min-width: 768px) {
+//   .reviews-section {
+//     padding-bottom: 300px;
+//   }
+// }
+
+@media screen and (min-width: 768px) {
+  .advantages-section {
+    padding-bottom: 140px;
+  }
+}
+
+// @media screen and (min-width: 1200px) {
+//   .slider {
+//     bottom: 100px;
+//   }
+// }
+
+// @media screen and (min-width: 1200px) {
+//   .advantages-section {
+//     padding-bottom: 145px;
+//   }
+// }
