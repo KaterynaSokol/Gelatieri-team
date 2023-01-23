@@ -18,8 +18,8 @@
 
 .modal {
   /* Скрываем окна  */
-  opacity: 0;
-  visibility: hidden;
+  // opacity: 0;
+  // visibility: hidden;
 
   /*  Установаем ширину окна  */
   // width: 100%;
@@ -45,6 +45,8 @@
 }
 
 .buy-now-modal {
+  opacity: 0;
+  visibility: hidden;
   // background-color: var(--text-light);
   // border: 2px solid var(--main-yellow);
   // border-radius: 10px;
@@ -433,6 +435,8 @@
   // top: 50%;
   // left: 50%;
   // width: 280px;
+  opacity: 0;
+  visibility: hidden;
   height: 968px;
   padding-top: 28px;
   padding-bottom: 28px;
@@ -786,6 +790,8 @@
   // top: 50%;
   // left: 50%;
   // width: 280px;
+  opacity: 0;
+  visibility: hidden;
   height: 459px;
   padding: 28px;
 
@@ -797,19 +803,34 @@
 
   /* transition: transform var(--transition-dur-and-func), opacity var(--transition-dur-and-func); */
 }
+@media screen and (max-width: 767px) {
+  .read-more-modal {
+    width: 280px;
+    height: auto;
+    padding: 28px;
+  }
+}
 
 @media screen and (min-width: 768px) {
   .read-more-modal {
-    padding-left: 60px;
-    padding-right: 60px;
+    padding: 32px 60px;
     width: 568px;
   }
 }
 
-@media screen and (max-width: 427px) {
-  .read-more-modal {
-    width: 90%;
-    height: auto;
+@media screen and (max-width: 767px) {
+  .video-modal {
+    width: 224px;
+    height: 199px;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .video-modal {
+    width: 448px;
+    height: 205px;
+    margin-bottom: 32px;
   }
 }
 
@@ -837,8 +858,15 @@
 .video-text {
   font-family: Montserrat, sans-serif;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4;
 
   color: var(--text-dark);
+
+  @media screen and (max-width: 767px) {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+    line-height: 1.4;
+  }
 }
