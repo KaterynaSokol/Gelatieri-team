@@ -25,6 +25,7 @@
   font-weight: 500;
   font-size: 12px;
   line-height: 1.83;
+  letter-spacing: 0.04em;
 }
 
 .working-period-day {
@@ -182,6 +183,13 @@
   align-items: center;
 }
 
+.button-our-location:focus .header-button-svg {
+  fill: white;
+}
+
+.button-franchise:focus .header-button-svg {
+  fill: white;
+}
 // ========================= Tablet================================
 
 @media screen and (min-width: 768px) {
