@@ -3,7 +3,7 @@
 <div class="overlay js-overlay-modal"></div>
 <div class="modal buy-now-modal" data-modal="2">
   <button type="button" class="js-modal-close">
-    <svg class="close-icon" width="11" height="11">
+    <svg class="close-icon" width="12" height="12">
       <use href="./images/sprite.svg#vector-black"></use>
     </svg>
   </button>
@@ -13,45 +13,56 @@
   <!-- img -->
   <ul class="img-list">
     <li class="img-item">
-      <img
-        class="img-fone"
-        srcset="./images/mobile_webp/threetype.webp
+      <div class="img-wrapper">
+        <div class="img-item-layout ice-cream">
+          <img
+            class="img-fone"
+            srcset="./images/mobile_webp/threetype.webp
             1x, ./images/mobile_webp/threetype@2.webp 2"
-        width="132"
-        height="132"
-        src="./images/mobile/threetype.jpg"
-        alt="ice cream"
-      />
+            width="132"
+            height="132"
+            src="./images/mobile/threetype.jpg"
+            alt="ice cream"
+          />
+        </div>
+      </div>
       <div class="text-border">
         <p class="text-label">ice cream</p>
       </div>
     </li>
     <li class="img-item">
-      <img
-        class="img-fone"
-        srcset="
-          ./images/mobile_webp/mokka.webp   1x,
-          ./images/mobile_webp/mokka@2.webp 2x
-        "
-        width="132"
-        height="132"
-        src="./images/mobile/icecoffee.jpg"
-        alt="ice coffee"
-      />
-      <div class="text-border">
+      <div class="img-wrapper">
+        <div class="img-item-layout ice-coffee">
+          <img
+            class="img-fone"
+            srcset="
+              ./images/mobile_webp/mokka.webp   1x,
+              ./images/mobile_webp/mokka@2.webp 2x
+            "
+            width="132"
+            height="132"
+            src="./images/mobile/icecoffee.jpg"
+            alt="ice coffee"
+          />
+        </div>
+      </div>
+      <div class="text-border coffee">
         <p class="text-label">ice coffee</p>
       </div>
     </li>
     <li class="img-item">
-      <img
-        class="img-fone"
-        srcset="./images/mobile_webp/latte.webp
-            1x, ./images/mobile_webp/latte@2.webp 2"
-        width="132"
-        height="132"
-        src="./images/mobile/milkshakes.jpg"
-        alt="milkshake"
-      />
+      <div class="img-wrapper">
+        <div class="img-item-layout milkshakes">
+          <img
+            class="img-fone"
+            srcset="./images/mobile_webp/latte.webp 1x, ./images/mobile_webp/latte@2.webp 2"
+            width="132"
+            height="132"
+            src="./images/mobile/milkshakes.jpg"
+            alt="milkshakes"
+          />
+        </div>
+      </div>
       <div class="text-border">
         <p class="text-label">milkshake</p>
       </div>
@@ -102,7 +113,7 @@
 <div class="modal ingredients-modal" data-modal="3">
   <!-- button-close -->
   <button type="button" class="js-modal-close" data-modal-close>
-    <svg class="close-icon" width="20" height="20">
+    <svg class="close-icon" width="12" height="12">
       <use href="./images/sprite.svg#vector-black"></use>
     </svg>
   </button>
@@ -110,15 +121,17 @@
   <h3 class="ingredients-title">Chololate icecream</h3>
 
   <!-- img -->
-  <div class="ingredients-img-item">
-    <img
-      class="ingredients-img-fone"
-      srcset="./images/mobile/chocolate.jpg 1x, ./images/mobile/chocolate@2.jpg 2"
-      width="132"
-      height="132"
-      src="./images/mobile/chocolate.jpg"
-      alt="chocolate"
-    />
+  <div class="ingredients-img-wrapper">
+    <div class="ingredients-img-item">
+      <img
+        class="ingredients-img-fone"
+        srcset="./images/mobile/chocolate.jpg 1x, ./images/mobile/chocolate@2.jpg 2"
+        width="132"
+        height="132"
+        src="./images/mobile/chocolate.jpg"
+        alt="chocolate"
+      />
+    </div>
   </div>
 
   <!-- value -->
@@ -167,7 +180,7 @@
     </li>
     <li class="ingredients-value-item">
       <p class="ingredients-name">
-        <span class="ingredients-units">Sugar</span>40g<span></span>
+        <span class="ingredients-units">Sugar</span><span>40g</span>
       </p>
     </li>
     <li class="ingredients-value-item">
@@ -221,7 +234,7 @@
 <div class="modal read-more-modal" data-modal="4">
   <!-- button-close -->
   <button type="button" class="js-modal-close" data-modal-close>
-    <svg class="close-icon" width="20" height="20">
+    <svg class="close-icon" width="12" height="12">
       <use href="./images/sprite.svg#vector-black"></use>
     </svg>
   </button>
