@@ -154,6 +154,7 @@
   height: 132px;
   margin-left: auto;
   margin-right: auto;
+  z-index: 1;
 
   // background-color: var(--green-line);
 
@@ -331,6 +332,7 @@
 
 .buy-now-modal-form-field-comment {
   margin-bottom: 26px;
+  background: rgba(248, 210, 78, 0.1);
 }
 
 .modal-form-message {
