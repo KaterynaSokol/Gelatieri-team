@@ -126,6 +126,7 @@
   .img-list {
     flex-direction: row;
     gap: 32px;
+    margin-bottom: 99px;
   }
 }
 
@@ -247,6 +248,18 @@
   // align-self: end;
 }
 
+@media screen and (max-width: 767px) {
+  .text-border:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
+@media and (min-width: 768px) {
+  .text-border {
+    margin-bottom: 40px;
+  }
+}
+
 .coffee {
   background: var(--light-yellow);
   border: 2px solid var(--light-yellow);
@@ -294,6 +307,7 @@
 .buy-now-modal-form {
   display: flex;
   flex-direction: column;
+  margin: 0 auto;
   @media screen and (max-width: 767px) {
     width: 224px;
   }
