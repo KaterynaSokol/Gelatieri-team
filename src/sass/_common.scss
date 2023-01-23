@@ -17,10 +17,18 @@
   --text-light: #fcfcfc;
   --text-dark: #131313;
   --text-footer: #7a7a7a;
+  --button-green: #0a8817;
+  --button-grey: #ababab;
+  --white: #ffffff;
+  --grey-line: #e1e1e1;
+  --green-line: #9cbe8f;
+  --green-border: #96af8c;
+  --cubic-bezier: cubic-bezier(0.4, 0, 0.2, 1);
 }
 body {
   color: var(--text-light);
   font-family: Montserrat, sans-serif;
+  
 }
 h1,
 h2,
@@ -38,6 +46,10 @@ ol {
   list-style: none;
 }
 
+a {
+  text-decoration: none;
+}
+
 img {
   display: block;
   max-width: 100%;
@@ -45,10 +57,6 @@ img {
 }
 .link {
   text-decoration: none;
-}
-
-.section {
-  padding: 120px 0 120px 0;
 }
 
 .container {

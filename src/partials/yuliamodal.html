@@ -1,0 +1,224 @@
+<!-- BUY_MODAL -->
+
+<div class="buy-now is-hidden" data-modal="2">
+  <div class="buy-now-modal">
+    <button type="button" class="data-close-modal" data-modal-close>
+      <svg class="close-icon" width="11" height="11">
+        <use href="./images/sprite.svg#vector-black"></use>
+      </svg>
+    </button>
+
+    <h3 class="buy-now-title">Buy now</h3>
+
+    <!-- img -->
+    <ul class="img-list">
+      <li class="img-item">
+        <img
+          class="img-fone"
+          srcset="./images/mobile_webp/threetype.webp
+            1x, ./images/mobile_webp/threetype@2.webp 2"
+          width="132"
+          height="132"
+          src="./images/mobile/threetype.jpg"
+          alt="ice cream"
+        />
+        <div class="text-border">
+          <p class="text-label">ice cream</p>
+        </div>
+      </li>
+      <li class="img-item">
+        <img
+          class="img-fone"
+          srcset="
+            ./images/mobile_webp/mokka.webp   1x,
+            ./images/mobile_webp/mokka@2.webp 2x
+          "
+          width="132"
+          height="132"
+          src="./images/mobile/icecoffee.jpg"
+          alt="ice coffee"
+        />
+        <div class="text-border">
+          <p class="text-label">ice coffee</p>
+        </div>
+      </li>
+      <li class="img-item">
+        <img
+          class="img-fone"
+          srcset="./images/mobile_webp/latte.webp
+            1x, ./images/mobile_webp/latte@2.webp 2"
+          width="132"
+          height="132"
+          src="./images/mobile/milkshakes.jpg"
+          alt="milkshake"
+        />
+        <div class="text-border">
+          <p class="text-label">milkshake</p>
+        </div>
+      </li>
+    </ul>
+
+    <!-- label -->
+    <form class="buy-now-modal-form">
+      <label class="buy-now-modal-form-field">
+        <span class="input-form-modal-wrapper"
+          ><input
+            type="text"
+            name="user_name"
+            class="modal-form-input"
+            required
+            pattern="[a-zA-Zа-яА-ЯіІїЇ]+"
+            minlength="2"
+            placeholder="Name"
+        /></span>
+      </label>
+      <label class="buy-now-modal-form-field">
+        <span class="input-form-modal-wrapper">
+          <input
+            type="tel"
+            name="user_phone"
+            class="modal-form-input"
+            required
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+            title="xxx-xxx-xx-xx"
+            placeholder="Phone"
+          />
+        </span>
+      </label>
+      <label class="buy-now-modal-form-field-comment">
+        <textarea
+          name="user_message"
+          class="modal-form-message"
+          placeholder="Comment"
+        ></textarea>
+      </label>
+
+      <!-- button submit -->
+      <button type="submit" class="modal-form-submit">Submit</button>
+    </form>
+  </div>
+</div>
+
+<!-- INGREDIENTS MODAL-->
+<div class="ingredients is-hidden" data-modal="3">
+  <div class="ingredients-modal">
+    <!-- button-close -->
+    <button type="button" class="data-close-modal" data-modal-close>
+      <svg class="close-icon" width="20" height="20">
+        <use href="./images/sprite.svg#vector-black"></use>
+      </svg>
+    </button>
+    <!-- title h3 -->
+    <h3 class="ingredients-title">Chololate icecream</h3>
+
+    <!-- img -->
+    <div class="ingredients-img-item">
+      <img
+        class="ingredients-img-fone"
+        srcset="./images/mobile/chocolate.jpg 1x, ./images/mobile/chocolate@2.jpg 2"
+        width="132"
+        height="132"
+        src="./images/mobile/chocolate.jpg"
+        alt="chocolate"
+      />
+    </div>
+
+    <!-- value -->
+    <ul class="value-list">
+      <li class="value-item">
+        <p class="numerical-value">320</p>
+        <p class="dimension">kcal</p>
+      </li>
+      <li class="value-item">
+        <p class="numerical-value">4g</p>
+        <p class="dimension">Prote...</p>
+      </li>
+      <li class="value-item">
+        <p class="numerical-value">8,2g</p>
+        <p class="dimension">Fats</p>
+      </li>
+      <li class="value-item">
+        <p class="numerical-value">40,4g</p>
+        <p class="dimension">Carbs</p>
+      </li>
+    </ul>
+
+    <!-- title h4 -->
+    <h4 class="ingredients-list-title">Ingredients</h4>
+
+    <ul class="ingredients-list">
+      <li class="ingredients-value-item">
+        <p class="ingredients-name">
+          <span>Milk</span><span class="ingredients-units">100ml</span>
+        </p>
+      </li>
+      <li class="ingredients-value-item">
+        <p class="ingredients-name">
+          <span>Belgian chocolate</span
+          ><span class="ingredients-units">20g</span>
+        </p>
+      </li>
+      <li class="ingredients-value-item">
+        <p class="ingredients-name">
+          <span>Cream</span><span class="ingredients-units">150 ml</span>
+        </p>
+      </li>
+      <li class="ingredients-value-item">
+        <p class="ingredients-name">
+          <span class="ingredients-units">Cocoa powder</span><span> 30g</span>
+        </p>
+      </li>
+      <li class="ingredients-value-item">
+        <p class="ingredients-name">
+          <span class="ingredients-units">Sugar</span>40g<span></span>
+        </p>
+      </li>
+      <li class="ingredients-value-item">
+        <p class="ingredients-name">
+          <span class="ingredients-units">Vanilla sugar</span><span>10g</span>
+        </p>
+      </li>
+    </ul>
+
+    <!-- label -->
+    <form class="ingredients-modal-form">
+      <label class="ingredients-modal-form-field">
+        <span class="input-form-modal-wrapper"
+          ><input
+            type="text"
+            name="user_name"
+            class="ingredients-modal-form-input"
+            required
+            pattern="[a-zA-Zа-яА-ЯіІїЇ]+"
+            minlength="2"
+            placeholder="Name"
+        /></span>
+      </label>
+      <label class="ingredients-modal-form-field">
+        <span class="input-form-modal-wrapper">
+          <input
+            type="tel"
+            name="user_phone"
+            class="ingredients-modal-form-input"
+            required
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+            title="xxx-xxx-xx-xx"
+            placeholder="Phone"
+          />
+        </span>
+      </label>
+      <label class="ingredients-modal-form-field-comment">
+        <textarea
+          name="user_message"
+          class="ingredients-modal-form-message"
+          placeholder="Comment"
+        ></textarea>
+      </label>
+
+      <!-- button submit -->
+      <button type="submit" class="ingredients-modal-form-submit">
+        Submit
+      </button>
+    </form>
+  </div>
+</div>
