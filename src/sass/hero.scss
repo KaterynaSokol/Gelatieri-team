@@ -1,0 +1,378 @@
+
+.hero-section {
+    background-color: #84A178;
+}
+
+.hero-wrapper {
+    position: relative;
+    background-repeat: no-repeat;
+    // outline: 2px solid black;
+}
+
+
+.hero-title {
+    margin-bottom: 32px;
+    max-width: 247px;
+    font-family: 'Seymour One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 33px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    text-align: left;
+    color: #FCFCFC;
+}
+
+.hero-title span {
+    color: #FCFCFC;
+    font-size: 34px;
+    line-height: 96.5%;
+}
+
+
+
+/* --------hero button ---------- */
+.hero-btn {
+  display: inline-block;
+  padding: 11px 26px;
+  margin-right: 12px;
+  border: 2px solid #F8D24E;
+  border-radius: 10px;
+
+  font-family: "Montserrat";
+  font-style: normal;
+
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  color: #000000;
+
+  background-color: transparent;
+  transition: border-color 250ms linear, color 250ms linear;
+}
+
+.hero-btn:hover {
+    border-color: #0A8817;
+}
+
+// desctop
+.hero-btn:focus {
+    outline: none;
+    border-color: #0A8817;
+    color: #FCFCFC;
+}
+
+.hero-link {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    text-decoration: underline;
+    color: #F8D24E;
+    transition: color 250ms linear;
+}
+
+.hero-link:hover {
+    color: #0A8817;
+}
+// desctop
+.hero-link:focus {
+    outline: none;
+    color: #FCFCFC;
+}
+
+
+
+.hero-icecream {
+    position: absolute;
+    bottom: 0;
+    right: 20px;
+}
+
+.hero-plate {
+    display: none;
+    position: absolute;
+}
+
+// ============ mobile ================
+@media screen and (max-width: 767px) {
+    // .hero-wrapper {
+    //     padding-top: 40px;
+    //     padding-bottom: 150px;
+
+    //     background-image: 
+    //     url(../images/mobile/icecream.png), 
+    //     url(../images/hero-mobile.svg);
+    //     background-size: 218px auto, 320px;
+    //     background-position: right 20px bottom, right bottom;
+    // }
+
+    .hero-wrapper {
+        padding-top: 40px;
+        padding-bottom: 150px;
+
+        background-image: url(../images/hero-mobile.svg);
+        // background-size: 320px;
+        background-position: right bottom;
+    }
+
+    // .hero-icecream {
+    //     position: absolute;
+    //     bottom: 0;
+    //     right: 20px;
+    // }
+
+
+}
+
+@media screen and (max-width: 479px) {
+    // .hero-wrapper {
+    //     padding-bottom: 236px;
+    //     background-size: 177px, 320px;
+    //     background-position: right 60px bottom, right bottom;  
+    // }
+
+    .hero-wrapper {
+        padding-bottom: 236px;  
+    }
+
+    .hero-icecream {
+        right: 60px;
+    }
+}
+// == end ====== /mobile ================
+
+
+.hero-descreption,
+.hero-numbers-wrapper,
+.hero-arrow-svg {
+    display: none;
+}
+
+
+// ============tablet 768px ================
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .hero-wrapper {
+        padding-top: 14px;
+        padding-bottom: 24px;
+
+        // background-image: 
+        // url(../images/tablet/icecream.png), 
+        // url(../images/tablet/icecreamplate.png),
+        // url(../images/hero-tablet.svg);
+        // background-size: 268px auto, 152px, 100%;
+        // background-position: right 92px bottom, left 32px bottom 12px, bottom;
+
+        background-image: url(../images/hero-tablet.svg);
+        background-position: bottom;
+    }
+
+    .hero-icecream {
+        right: 92px;
+    }
+
+    .hero-plate {
+        display: block;
+        left: 32px;
+        bottom: 12px;
+    }
+
+    .hero-title {
+        margin-bottom: 24px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .hero-descreption {
+        display: block;
+        width: 139px;
+        margin-left: 184px;
+        margin-top: 39px;
+
+        font-family: 'Montserrat';
+        font-style: normal;
+
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 140%;
+        color: #FCFCFC;
+    }
+
+    .hero-arrow-svg {
+        display: block;
+        margin-left: 184px;
+        margin-top: 12px;
+        fill: #FCFCFC;
+    }
+
+    .hero-numbers-wrapper {
+        display: block;
+        position: absolute;
+        // top: 94px;
+        top: 28px;
+        right: 32px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        text-align: right;
+        // border: 1px solid black;
+    }
+    
+    .hero-numbers:nth-child(2n+1) {
+        font-weight: 900;
+        font-size: 28px;
+        line-height: 34px;
+        letter-spacing: 0.04em;
+        color: #131313;
+        margin-bottom: 4px;
+    }
+    
+    .hero-numbers:nth-child(2n) {
+        font-weight: 400;
+        font-size: 8px;
+        line-height: 10px;
+        color: #FCFCFC; 
+    }
+    
+    .hero-numbers:nth-child(2) {
+        margin-bottom: 20px;
+    }
+}
+
+// == end ======/tablet 768px ================
+
+
+// ============ desctop 1200px ================
+
+@media screen and (min-width: 1200px) {
+    .hero-wrapper {
+        // padding-top: 118px;
+        padding-top: 48px;
+        padding-bottom: 103px;
+
+        // background-image: 
+        // url(../images/desktop/icecream.png), 
+        // url(../images/desktop/icecreamplate.png),
+        // url(../images/hero-desktop.svg);
+        // background-size: 456px auto, 225px, 100%;
+        // background-position: right 92px bottom, left 16px bottom 65px, bottom;
+
+        background-image: url(../images/hero-desktop.svg);
+        background-position: bottom;
+    }
+
+    .hero-icecream {
+        right: 92px;
+    }
+
+    .hero-plate {
+        display: block;
+        left: 16px;
+        bottom: 65px;
+    }
+
+    .hero-title {
+        margin-bottom: 28px;
+        max-width: 367px;
+        font-size: 38px;
+        line-height: 48px;
+    }
+
+    .hero-btn {
+        padding: 12px 34px;
+        margin-right: 34px;
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .hero-link {
+        font-size: 14px;
+        line-height: 17px;
+    }    
+
+    .hero-descreption {
+        width: 200px;
+        margin-left: 241px;
+        margin-top: 109px;
+        font-size: 14px; 
+    }
+
+    .hero-arrow-svg {
+        margin-left: 241px;
+        margin-top: 24px;
+    }
+
+    .hero-numbers-wrapper {
+        // top: 126px;
+        top: 56px;
+        right: 16px;
+    }
+    
+    .hero-numbers:nth-child(2n+1) {
+        font-size: 46px;
+        line-height: 56px;
+    }
+    
+    .hero-numbers:nth-child(2n) {
+        font-size: 14px;
+        line-height: 17px;
+    }
+    
+    .hero-numbers:nth-child(2) {
+        margin-bottom: 16px;
+    }
+}
+
+// === end ========= /desctop 1200px ================
+
+
+// =====anime===========
+
+.hero-plate {
+    animation-name: anime-plate;
+    animation-duration: 1800ms;
+    animation-timing-function: linear;
+}
+
+.hero-icecream {
+    transform-origin: bottom center;
+    animation-name: anime-icecream;
+    animation-duration: 1000ms;
+    animation-timing-function: linear;
+}
+
+@keyframes anime-plate {
+    0% {
+      opacity: 0;
+      transform: rotate(-10deg) translate(-10px, -5px);
+    }
+    60% {
+        opacity: 0;
+        transform: rotate(-10deg) translate(-10px, -5px);
+      }
+    100% {
+      opacity: 1;
+      transform: rotate(0deg) translate(0, 0);
+    }
+  }
+
+  @keyframes anime-icecream {
+    0% {
+      opacity: 0;
+      transform: rotate(0deg);
+    }
+    40% {
+        opacity: 0;
+        transform: rotate(0.4deg);
+      }
+    100% {
+      opacity: 1;
+      transform: rotate(0deg);
+    }
+  }
+
+
