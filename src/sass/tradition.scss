@@ -48,19 +48,23 @@
   margin-top: 32px;
   margin-left: auto;
   margin-right: auto;
-
-  position: absolute;
-  top: 22px;
   position: relative;
+  background: linear-gradient(0deg, var(--main-yellow), var(--main-yellow)),
+    var(--gradient);
+  background-repeat: no-repeat;
+  box-shadow: 0px 4.48583px 16.8218px var(--text-dark);
+  border-radius: 50%;
+  bottom: 39px;
 }
 
 .advantages-img {
-  position: absolute;
-  background: linear-gradient(var(--main-yellow), var(--main-yellow)),
-    var(--gradient);
-  box-shadow: 0px 4.48583px 16.8218px var(--text-dark);
-  border-radius: 140px;
+  // position: absolute;
+  // background: linear-gradient(var(--main-yellow), var(--main-yellow)),
+  //   var(--gradient);
+  // box-shadow: 0px 4.48583px 16.8218px var(--text-dark);
+  // border-radius: 140px;
   justify-content: center;
+  position: absolute;
 }
 
 .advantages-desc-item {
@@ -186,6 +190,13 @@
     font-size: 12px;
     line-height: 1.62;
   }
+  .advantages-img {
+    border-radius: 50%;
+  }
+
+  .advantages-title {
+    margin-bottom: 32px;
+  }
 }
 
 .advantages-thumb-list {
@@ -253,6 +264,7 @@
     font-weight: 400;
     font-size: 30px;
     width: 454px;
+    margin-bottom: 72px;
   }
 
   .advantages-picture {
@@ -262,8 +274,11 @@
 
   .advantages-desc {
     margin-right: auto;
-    margin-left: 109px;
     text-align: left;
+  }
+
+  .advantages-desc-item:not(:last-child) {
+    margin-bottom: 8px;
   }
 
   .advantages-desc-item {
@@ -276,7 +291,7 @@
     display: flex;
     gap: 38px;
     align-items: center;
-    justify-content: center;
+    // justify-content: center;
   }
 
   .advantages-img {
@@ -293,7 +308,7 @@
     align-items: center;
     justify-content: center;
     gap: 80px;
-    margin-top: 67px;
+    margin-top: 60px;
     margin-bottom: 64px;
   }
 
@@ -305,6 +320,7 @@
   .advantages-thumb-lead {
     width: 152px;
     font-size: 14px;
+    font-weight: 400;
   }
   .paragraph-1,
   .paragraph-2 {
@@ -339,6 +355,7 @@
   .advantages-title {
     font-size: 32px;
     width: 481px;
+    margin-bottom: 85px;
   }
 
   .advantages-picture {
@@ -348,6 +365,10 @@
 
   .advantages-desc-item {
     width: 463px;
+  }
+
+  .advantages-desc-item:not(:last-child) {
+    margin-bottom: 9px;
   }
 
   .advantages-img {
@@ -361,11 +382,14 @@
 
   .advantages-thumb-text {
     font-size: 58px;
+    margin-top: 40px;
   }
 
   .advantages-thumb-lead {
     width: 368px;
     font-size: 16px;
+    font-weight: 400;
+    margin-top: 12px;
   }
 
   .advantages-thumb-items {
