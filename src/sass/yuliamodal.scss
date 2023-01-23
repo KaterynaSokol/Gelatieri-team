@@ -118,7 +118,7 @@
 @media screen and (max-width: 767px) {
   .img-list {
     flex-direction: column;
-    gap: 20px;
+    // gap: 20px;
   }
 }
 
@@ -140,6 +140,11 @@
   border-radius: 50%;
 
   // margin-top: 20px;
+}
+@media screen and (max-width: 767px) {
+  .img-item {
+    margin-bottom: 87px;
+  }
 }
 
 .img-wrapper {
@@ -299,6 +304,7 @@
   margin: 0 auto;
   @media screen and (max-width: 767px) {
     width: 224px;
+    margin-top: 5px;
   }
 
   @media screen and (min-width: 768px) {
