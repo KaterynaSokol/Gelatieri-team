@@ -9,8 +9,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  border-radius: 18px;
 }
 
+.slider-acting {
+  gap: 0px;
+}
 .reviews-slider-icecream img {
   border-radius: 18px;
 }
@@ -152,6 +156,15 @@
 .swiper-pagination-custom,
 .swiper-pagination-fraction {
   margin-bottom: -12px;
+}
+
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: var(--main-green);
 }
 
 // @media screen and (min-width: 768px) {
