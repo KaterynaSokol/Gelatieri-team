@@ -248,18 +248,6 @@
   // align-self: end;
 }
 
-@media screen and (max-width: 767px) {
-  .text-border:not(:last-child) {
-    margin-bottom: 20px;
-  }
-}
-
-@media and (min-width: 768px) {
-  .text-border {
-    margin-bottom: 40px;
-  }
-}
-
 .coffee {
   background: var(--light-yellow);
   border: 2px solid var(--light-yellow);
