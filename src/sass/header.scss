@@ -214,12 +214,15 @@
     }
 
     .site-nav-item .link {
+        padding-top: 11px;
+        padding-bottom: 11px;
         color: var(--text-light);
-        transition: color 250ms var(--cubic-bezier);
+        // transition: color 250ms var(--cubic-bezier);
     }
     .site-nav-item .link:hover,
     .site-nav-item .link:focus {
          color: var(--main-yellow);
          outline: none;
+         transform: scale(1.2);
     }
 }
