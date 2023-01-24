@@ -47,7 +47,7 @@
   font-size: 12px;
   line-height: 15px;
   letter-spacing: 0.04em;
-  cursor: pointer;
+//   cursor: pointer;
   color: #000000;
 
   background-color: transparent;
@@ -202,6 +202,30 @@
         line-height: 140%;
         color: #FCFCFC;
     }
+
+
+    .hero-arrow-link {
+        outline: none;
+    }
+
+    .hero-arrow-link:hover .hero-arrow-svg,
+    .hero-arrow-link:focus .hero-arrow-svg {
+        animation-name: changeSvgColor;
+        animation-duration: 1000ms;
+        animation-iteration-count: infinite;
+    }
+        @keyframes changeSvgColor {
+        0% {
+          fill: var(--text-light);
+        }
+        50% {
+          fill: var(--main-green);
+        }
+        100% {
+          fill: var(--text-light);
+        }
+    }
+
 
     .hero-arrow-svg {
         display: block;
