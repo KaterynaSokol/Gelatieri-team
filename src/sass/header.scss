@@ -35,12 +35,12 @@
 
     .logo:hover .header-logo-svg,
     .logo:focus .header-logo-svg {
-        animation-name: changeSvgColor;
+        animation-name: changeSvgColorLogo;
         animation-duration: 1000ms;
         animation-iteration-count: infinite;
     }
 
-    @keyframes changeSvgColor {
+    @keyframes changeSvgColorLogo {
         0% {
           fill: var(--main-yellow);
         }
