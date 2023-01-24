@@ -156,6 +156,12 @@
   width: 100%;
   height: 100%;
 }
+.advantages-desc-item:hover,
+.advantages-thumb-text:hover,
+.advantages-thumb-lead:hover {
+  transform: scale(1.1);
+  transition: transform 250ms var(--cubic-bezier);
+}
 
 @media screen and (min-width: 480px) {
   .advantages-section {
