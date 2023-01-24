@@ -1,11 +1,12 @@
 .header {
-  padding-bottom: 0;
-  background: #84a178;
-}
-
-// @media screen and (min-width: 320px) {
-.header {
-  padding-top: 12px;
+    width: 100vw;
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 12px;
+    padding-bottom: 0;
+    background-color: rgba(132, 161, 120, 0.65);
 }
 
 .header > .container {
@@ -74,7 +75,6 @@
   fill: var(--white);
   background-color: var(--main-green);
 }
-// }
 
 @media screen and (min-width: 480px) {
   .header {
