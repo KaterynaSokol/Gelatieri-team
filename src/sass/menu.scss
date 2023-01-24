@@ -46,10 +46,10 @@
 
 @keyframes changeBgColor {
   20% {
-    background-color: #efd478;
+    background-color: #8fbc8f;
   }
   40% {
-    background-color: #d6936d;
+    background-color: #84a178;
   }
 
   60% {
@@ -67,7 +67,7 @@
 .mobile-menu-nav-item {
   animation-name: changeFontSize;
   animation-duration: 1500ms;
-  animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+  animation-timing-function: cubic-bezier(0.02, 0.93, 0.96, 0.88);
   animation-iteration-count: 2;
   animation-delay: 300ms;
 }
