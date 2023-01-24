@@ -62,6 +62,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
 }
 
 .visit-item-titel {
@@ -141,6 +142,8 @@
   font-size: 14px;
   line-height: 1.28;
   color: var(--text-dark);
+  transition: background-color 250ms var(--cubic-bezier),
+    fill 250ms var(--cubic-bezier), background-color 250ms var(--cubic-bezier);
 }
 
 .button-franchise {
@@ -153,6 +156,8 @@
   font-size: 14px;
   line-height: 1.28;
   color: var(--text-dark);
+  transition: background-color 250ms var(--cubic-bezier),
+    fill 250ms var(--cubic-bezier), background-color 250ms var(--cubic-bezier);
 }
 
 .button-franchise:hover {
