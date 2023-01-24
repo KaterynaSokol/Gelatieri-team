@@ -1,0 +1,232 @@
+// GENERAL STYLES
+
+.mobile-menu-nav-item {
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
+
+  text-align: center;
+  text-decoration: underline;
+}
+
+.mobile-menu-nav-link {
+  color: #f8d24e;
+}
+
+.mobile-menu-nav-link:hover {
+  color: #0a8817;
+}
+
+.mobile-menu-nav-link:focus {
+  color: #fcfcfc;
+}
+.mobile-menu-nav-link:active {
+  color: #131313;
+}
+.mobile-menu-nav-link:disabled {
+  color: #ababab;
+}
+.mobile-menu {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+
+  top: 0;
+  left: 0;
+  z-index: 50;
+  overflow-y: scroll;
+  background-color: #85a279;
+  transform: translateX(100%);
+  transition: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.mobile-menu.is-open {
+  transform: translateX(0);
+}
+// MOBILE STYLES
+
+@media screen and (max-width: 767px) {
+  .mobile-menu-nav-item {
+    font-size: 32px;
+    line-height: 1.2;
+  }
+
+  .mobile-menu-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+
+    padding-top: 104px;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-bottom: 88px;
+  }
+  .mobile-menu-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    margin: auto;
+    padding: 0%;
+  }
+
+  .button-order-now {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .button-order-now {
+    display: inline-block;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    width: 152px;
+    font-family: Montserrat, sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.2;
+    text-align: center;
+    background-color: #f8d24e;
+    color: #000000;
+    border-radius: 10px;
+    border: transparent;
+    align-self: center;
+  }
+  .button-order-now,
+  .button-arrow-icon {
+    display: flex;
+    align-items: baseline;
+    gap: 4px;
+  }
+  .button-order-now:hover {
+    background-color: #0a8817;
+    fill: currentColor;
+  }
+  .button-order-now:focus {
+    background-color: #0a8817;
+    color: #ffffff;
+    fill: currentColor;
+  }
+  .button-order-now:disabled {
+    background-color: #ababab;
+    fill: currentColor;
+  }
+
+  .mobile-menu-close-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    fill: #fcfcfc;
+    background: transparent;
+    border: transparent;
+    padding: 0;
+  }
+
+  .logo-mobile-menu {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 44px;
+    fill: #f8d24e;
+  }
+
+  .mobile-menu-nav,
+  .button-order-now-div {
+    display: flex;
+    flex-direction: column;
+  }
+  .button-order-now-div {
+    margin-top: 110px;
+  }
+}
+
+// TABLET STYLES
+
+@media screen and (min-width: 768px) {
+  .button-order-now {
+    display: none;
+  }
+
+  .mobile-menu-nav-item {
+    font-size: 48px;
+    line-height: 1.2;
+  }
+  .mobile-menu {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+
+    top: 0;
+    left: 0;
+    z-index: 50;
+    overflow-y: scroll;
+    background-color: #85a279;
+    transform: translateX(100%);
+    transition: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+  .mobile-menu.is-open {
+    transform: translateX(0);
+  }
+  .mobile-menu-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+
+    padding-top: 140px;
+    padding-left: 192px;
+    padding-right: 192px;
+  }
+  .mobile-menu-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    margin: auto;
+    padding: 0%;
+  }
+  .mobile-menu-close-button {
+    position: absolute;
+    top: 32px;
+    right: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    fill: #fcfcfc;
+    background: transparent;
+    border: transparent;
+    padding: 0;
+  }
+
+  .logo-mobile-menu {
+    position: absolute;
+    top: 20px;
+    left: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 44px;
+    fill: #f8d24e;
+  }
+  .mobile-menu-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin: auto;
+    padding: 0%;
+  }
+}
+
+// NO MENU FOR DESKTOP
+
+@media screen and (min-width: 1200px) {
+  .mobile-menu {
+    display: none;
+  }
+}

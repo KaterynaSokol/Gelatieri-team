@@ -1,4 +1,4 @@
-<section class="contacts">
+<section class="contacts-section" id="contacts">
   <div class="container contacts-container">
     <ul class="visit-list">
       <!-- ============================================1st visit-card====================================== -->
@@ -15,7 +15,7 @@
             <p class="working-period-day">Monday - Friday</p>
             <p class="working-period-hours">06:00 AM - 10:00 PM</p>
           </li>
-          <li>
+          <li class="working-period-weekend">
             <p class="working-period-day">Saturday - Sunday</p>
             <p class="working-period-hours">08:00 AM - 16:00 PM</p>
           </li>
@@ -31,7 +31,7 @@
       </li>
       <!-- ===============================================2nd visit-card======================================-->
       <li class="visit-item">
-        <h3 class="visit-item-titel">food track</h3>
+        <h3 class="visit-item-titel">foodtrack</h3>
         <div class="address-container">
           <p class="address-city">Los Angeles</p>
           <p class="address-street">
@@ -43,7 +43,7 @@
             <p class="working-period-day">Monday - Friday</p>
             <p class="working-period-hours">06:00 AM - 10:00 PM</p>
           </li>
-          <li>
+          <li class="working-period-weekend">
             <p class="working-period-day">Saturday - Sunday</p>
             <p class="working-period-hours">08:00 AM - 16:00 PM</p>
           </li>
@@ -69,7 +69,7 @@
             <p class="working-period-day">Monday - Friday</p>
             <p class="working-period-hours">06:00 AM - 10:00 PM</p>
           </li>
-          <li>
+          <li class="working-period-weekend">
             <p class="working-period-day">Saturday - Sunday</p>
             <p class="working-period-hours">08:00 AM - 16:00 PM</p>
           </li>
@@ -87,10 +87,32 @@
     <!-- ========================================contacts buttons====================================== -->
     <ul class="contacts-buttons-list">
       <li class="contacts-button">
-        <button type="button">Our Locations &rsaquo;</button>
+        <button
+          type="button"
+          class="button-our-location js-open-modal"
+          data-modal="1"
+        >
+          Our Locations
+          <span class="header-button-span-svg">
+            <svg class="header-button-svg" width="6" height="10">
+              <use href="./images/sprite.svg#vector"></use>
+            </svg>
+          </span>
+        </button>
       </li>
       <li class="contacts-button">
-        <button type="button">Franchise &rsaquo;</button>
+        <button
+          type="button"
+          class="button-franchise js-open-modal"
+          data-modal="5"
+        >
+          Franchise
+          <span class="header-button-span-svg">
+            <svg class="header-button-svg" width="6" height="10">
+              <use href="./images/sprite.svg#vector"></use>
+            </svg>
+          </span>
+        </button>
       </li>
     </ul>
   </div>
