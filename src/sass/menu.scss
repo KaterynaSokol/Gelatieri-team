@@ -27,21 +27,19 @@
 }
 .mobile-menu {
   position: fixed;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
 
   top: 0;
   left: 0;
-  // z-index: 3;
-  // overflow-y: scroll;
+
   background-color: #85a279;
   transform: translateX(100%);
-  transition: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: transform 1000ms;
 }
 .mobile-menu.is-open {
   transform: translateX(0);
 }
-// MOBILE STYLES
 
 @media screen and (max-width: 767px) {
   .mobile-menu-nav-item {
@@ -167,7 +165,7 @@
     overflow-y: scroll;
     background-color: #85a279;
     transform: translateX(100%);
-    transition: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    transition: transform 1000ms;
   }
   .mobile-menu.is-open {
     transform: translateX(0);
