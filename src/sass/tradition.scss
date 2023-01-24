@@ -97,7 +97,6 @@
   align-items: center;
   text-align: center;
   color: var(--text-dark);
-  cursor: pointer;
   outline: none;
   background: var(--main-yellow);
   border: transparent;
@@ -117,9 +116,15 @@
   background-color: var(--main-yellow);
   margin-left: 8px;
   fill: #000000;
+  transition: background-color 250ms var(--cubic-bezier),
+    fill 250ms var(--cubic-bezier), background-color 250ms var(--cubic-bezier);
 }
 
 .advantages-button:hover {
+  background-color: var(--button-green);
+}
+
+.advantages-button:hover .advantages-btn-svg {
   background-color: var(--button-green);
 }
 
@@ -128,10 +133,16 @@
   color: var(--text-light);
 }
 
-.advantages-btn-svg {
-  fill: var(--text-light);
+.advantages-button:focus .advantages-btn-svg {
   background-color: var(--button-green);
+  color: var(--text-light);
+  fill: var(--text-light);
 }
+
+// .advantages-btn-svg {
+//   fill: var(--text-light);
+//   background-color: var(--button-green);
+// }
 
 .advantages-thumb-items {
   margin-top: 50px;
