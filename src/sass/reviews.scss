@@ -66,7 +66,9 @@
   position: relative;
   bottom: 50px;
 }
-
+.swiper-pagination-clickable .swiper-pagination-bullet {
+  cursor: url(../images/cursor.svg), auto;
+}
 // ============================== Tablet ==================================
 // @media screen and (min-width: 768px) {
 //   .reviews-section {
