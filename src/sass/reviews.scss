@@ -27,7 +27,6 @@
 
 .reviews-slider-icecream {
   max-width: 440px;
-  margin-bottom: 80px;
   border-radius: 18px;
 }
 
@@ -70,11 +69,11 @@
   cursor: url(../images/cursor.svg), auto;
 }
 // ============================== Tablet ==================================
-// @media screen and (min-width: 768px) {
-//   .reviews-section {
-//     padding-bottom: 433px;
-//   }
-// }
+@media screen and (min-width: 768px) {
+  .reviews-section {
+    padding-bottom: 230px;
+  }
+}
 
 @media screen and (min-width: 768px) {
   .reviews-container {
@@ -86,6 +85,11 @@
 @media screen and (min-width: 768px) {
   .reviews-slider-icecream {
     max-width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .slider {
     margin-bottom: 100px;
   }
 }
@@ -134,7 +138,7 @@
 }
 
 @media screen and (min-width: 1200px) {
-  .reviews-slider-icecream {
+  .slider {
     margin-bottom: 140px;
   }
 }
