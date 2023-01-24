@@ -333,7 +333,7 @@
   padding-left: 12px;
   padding-bottom: 8px;
 
-  @media screen and (min-width: 768px){
+  @media screen and (min-width: 768px) {
     padding-top: 11px;
     padding-left: 16px;
     padding-bottom: 11px;
@@ -343,9 +343,8 @@
   border-radius: 10px;
   background-color: rgba(248, 210, 78, 0.1);
 
-  /* transition: border-color var(--transition-dur-and-func); */  
+  /* transition: border-color var(--transition-dur-and-func); */
 }
-
 
 .buy-now-modal-form-field-comment {
   margin-bottom: 26px;
@@ -695,7 +694,6 @@
   padding: 11px 10px;
   @media screen and (min-width: 768px) {
     padding-left: 16px;
-    
   }
 
   border: 1px solid var(--main-green);
@@ -725,7 +723,6 @@
 
   @media screen and (min-width: 768px) {
     padding-left: 16px;
-    
   }
 
   border: 1px solid var(--main-green);
