@@ -43,15 +43,19 @@
 }
 
 .visit-list {
-  bottom: 90px;
-  position: relative;
-  // position: relative;
-  bottom: 390px;
-  margin-bottom: -390px;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 16px;
+}
+
+.visit-list-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  bottom: 390px;
+  margin-bottom: -390px;
 }
 
 .visit-item {
