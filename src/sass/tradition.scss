@@ -45,16 +45,16 @@
   width: 278px;
   height: 300px;
   display: block;
-  margin-top: 32px;
+  // margin-top: 32px;
   margin-left: auto;
   margin-right: auto;
-  position: relative;
+  // position: relative;
   background: linear-gradient(0deg, var(--main-yellow), var(--main-yellow)),
     var(--gradient);
   background-repeat: no-repeat;
   box-shadow: 0px 4.48583px 16.8218px var(--text-dark);
   border-radius: 50%;
-  bottom: 39px;
+  // bottom: 39px;
 }
 
 .advantages-img {
@@ -128,7 +128,7 @@
   color: var(--text-light);
 }
 
-.advantages-button:focus .advantages-btn-svg {
+.advantages-btn-svg {
   fill: var(--text-light);
   background-color: var(--button-green);
 }
@@ -192,6 +192,7 @@
   }
   .advantages-img {
     border-radius: 50%;
+    margin-top: 28px;
   }
 
   .advantages-title {
