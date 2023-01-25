@@ -10,21 +10,21 @@
   font-size: 14px;
   line-height: 1.2;
   text-align: center;
-  background-color: #f8d24e;
+  background-color: var(--main-yellow);
   color: #000000;
   border-radius: 10px;
   border: transparent;
 }
 
 .button-open-map:hover {
-  background-color: #0a8817;
+  background-color: var(--button-green);
 }
 .button-open-map:focus {
-  background-color: #0a8817;
+  background-color: var(--button-green);
   color: #ffffff;
 }
 .button-open-map:disabled {
-  background-color: #ababab;
+  background-color: var(--button-grey);
 }
 .overlay {
   opacity: 0;
@@ -55,7 +55,7 @@
 .modal-location-button-icon {
   width: 12px;
   height: 12px;
-  fill: #131313;
+  fill: var(--text-dark);
 }
 
 .modal-location {
@@ -70,8 +70,8 @@
   z-index: 30;
   transition: 0.3s all;
 
-  background: #fcfcfc;
-  border: 2px solid #f8d24e;
+  background: var(--text-light);
+  border: 2px solid var(--main-yellow);
   border-radius: 10px;
 }
 .modal-location.active,
@@ -93,7 +93,7 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
-    color: #131313;
+    color: var(--text-dark);
 
     margin-bottom: 20px;
     margin-top: 0;
@@ -127,7 +127,7 @@
     font-weight: 400;
     font-size: 20px;
     line-height: 1.4;
-    color: #131313;
+    color: var(--text-dark);
 
     margin-bottom: 32px;
     margin-top: 0;
