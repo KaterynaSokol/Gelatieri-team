@@ -69,6 +69,12 @@
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
 }
 
+.visit-item:hover,
+.visit-item:focus {
+  transform: scale(1.01);
+  transition: transform 250ms var(--cubic-bezier);
+}
+
 .visit-item-titel {
   background-color: var(--main-yellow);
   padding: 4px 22px;
