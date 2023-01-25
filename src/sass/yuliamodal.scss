@@ -3,7 +3,7 @@
   opacity: 0;
   visibility: hidden;
 
-  position: fixed;
+  // position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -26,12 +26,14 @@
   //   width: 280px;
 
   /*  Центрируем и задаем z-index */
-  // position: fixed;
+  position: fixed;
+  display: block;
   position: absolute;
+  z-index: 100;
   top: 50%;
   left: 50%;
+  overflow-y: auto;
   transform: translate(-50%, -50%);
-  z-index: 30;
   /* Должен быть выше чем у подложки*/
   background-color: var(--text-light);
   border: 2px solid var(--main-yellow);
@@ -46,6 +48,7 @@
 }
 
 .buy-now-modal {
+  position: fixed;
   opacity: 0;
   visibility: hidden;
   // background-color: var(--text-light);
@@ -884,6 +887,6 @@
   }
 }
 
-.video-modal{
+.video-modal {
   border: 0px;
 }
