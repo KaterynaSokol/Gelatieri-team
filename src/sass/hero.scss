@@ -47,7 +47,7 @@
   font-size: 12px;
   line-height: 15px;
   letter-spacing: 0.04em;
-  cursor: pointer;
+//   cursor: pointer;
   color: #000000;
 
   background-color: transparent;
@@ -203,12 +203,63 @@
         color: #FCFCFC;
     }
 
+
+    .hero-arrow-link {
+        outline: none;
+    }
+
+    .hero-arrow-link:hover .hero-arrow-svg,
+    .hero-arrow-link:focus .hero-arrow-svg {
+        animation-name: changeSvgColor;
+        animation-duration: 1000ms;
+        animation-iteration-count: infinite;
+    }
+        @keyframes changeSvgColor {
+        0% {
+          fill: var(--text-light);
+        }
+        50% {
+          fill: var(--main-green);
+        }
+        100% {
+          fill: var(--text-light);
+        }
+    }
+
+
     .hero-arrow-svg {
         display: block;
         margin-left: 184px;
         margin-top: 12px;
         fill: #FCFCFC;
     }
+
+    .hero-arrow-link {
+        outline: none;
+    }
+
+    .hero-arrow-link:hover .hero-arrow-svg,
+    .hero-arrow-link:focus .hero-arrow-svg {
+        animation-name: changeSvgColor;
+        animation-duration: 1000ms;
+        animation-iteration-count: infinite;
+    }
+
+
+    @keyframes changeSvgColor {
+        0% {
+          fill: var(--text-light);
+        }
+        50% {
+          fill: var(--main-green);
+        }
+        100% {
+          fill: var(--text-light);
+        }
+    }
+
+
+
 
     .hero-numbers-wrapper {
         display: block;
@@ -330,12 +381,12 @@
 // === end ========= /desctop 1200px ================
 
 
-// =====anime===========
+// ===== anime ===========
 
 .hero-plate {
     animation-name: anime-plate;
     animation-duration: 1800ms;
-    animation-timing-function: linear;
+    animation-timing-function: cubic-bezier(.02,.46,.68,.99);
 }
 
 .hero-icecream {
