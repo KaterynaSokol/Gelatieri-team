@@ -371,10 +371,10 @@
   /* transition: border-color var(--transition-dur-and-func); */
 }
 
-.modal-form-message:focus {
-  outline: none;
-  border: var(--button-green);
-}
+// .modal-form-message:focus {
+//   // outline: none;
+//   // border: var(--button-green);
+// }
 
 .modal-form-message::placeholder {
   font-family: Montserrat, sans-serif;
@@ -720,10 +720,10 @@
   /* transition: border-color var(--transition-dur-and-func); */
 }
 
-.ingredients-modal-form-message:focus {
-  outline: none;
-  border: var(--button-green);
-}
+// .ingredients-modal-form-message:focus {
+//   outline: none;
+//   border: var(--button-green);
+// }
 
 .ingredients-modal-form-message::placeholder {
   font-family: Montserrat, sans-serif;
