@@ -54,6 +54,7 @@
 .footer-network-link:focus {
   fill: var(--text-light);
   outline: none;
+  transform: scale(1.1);
 }
 .footer-link-icon {
 }
@@ -65,10 +66,12 @@
 }
 a.footer-tell {
   text-decoration: none;
-}
-.footer-tell {
   font-weight: 500;
   color: var(--text-light);
+  transition: transform 250ms var(--cubic-bezier);
+}
+.footer-tell:hover {
+  transform: scale(1.1);
 }
 .footer-copyright {
   background-color: var(--main-green);
