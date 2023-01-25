@@ -32,7 +32,7 @@
   z-index: 100;
   top: 50%;
   left: 50%;
-  overflow-y: auto;
+  // overflow-y: auto;
   transform: translate(-50%, -50%);
   /* Должен быть выше чем у подложки*/
   background-color: var(--text-light);
@@ -887,6 +887,4 @@
   }
 }
 
-.video-modal {
-  border: 0px;
-}
+
