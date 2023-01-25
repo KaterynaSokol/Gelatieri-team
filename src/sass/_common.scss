@@ -29,8 +29,13 @@ body {
   color: var(--text-light);
   font-family: Montserrat, sans-serif;
   background-color: var(--main-green);
-  cursor: url(../images/cursor.svg), auto;
 }
+
+button:hover {
+  transform: scale(1.1);
+  transition: transform 250ms var(--cubic-bezier);
+}
+
 h1,
 h2,
 тз h3,
