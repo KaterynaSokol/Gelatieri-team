@@ -49,6 +49,8 @@
   padding: 7px;
   fill: var(--main-green);
   background-color: var(--main-yellow);
+  transition: background-color 250ms var(--cubic-bezier),
+    fill 250ms var(--cubic-bezier), background-color 250ms var(--cubic-bezier);
 }
 .footer-network-link:hover,
 .footer-network-link:focus {
