@@ -101,8 +101,7 @@
   background: var(--main-yellow);
   border: transparent;
   border-radius: 10px;
-  transition: background-color 250ms var(--cubic-bezier),
-    fill 250ms var(--cubic-bezier), background-color 250ms var(--cubic-bezier);
+  transition: background-color 250ms var(--cubic-bezier);
 }
 
 .advantages-btn-svg {
@@ -116,7 +115,7 @@
   background-color: var(--main-yellow);
   margin-left: 8px;
   fill: #000000;
-  transition: background-color 250ms var(--cubic-bezier),
+  transition: background-color 150ms var(--cubic-bezier),
     fill 250ms var(--cubic-bezier), background-color 250ms var(--cubic-bezier);
 }
 
